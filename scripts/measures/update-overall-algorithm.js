@@ -47,6 +47,7 @@ const mapOverallAlgorithm = (columnValue) => {
  */
 const config = {
   sourced_fields: {
+    ogMeasureId: 3,
     // Needs a function to map 
     measureId: {
       index: 3,
@@ -96,19 +97,26 @@ const convertCsvToMeasures = function(records, config) {
 
 // TODO(aimee): Add documentation
 function mergeMeasures(existingMeasures, updatedMeasures) {
+  let resultsString = '';
   updatedMeasures.forEach((updatedMeasure) => {
     const existingMeasure = existingMeasures.find((measure) => {
       return measure.measureId === updatedMeasure.measureId;
     });
 
     // Skip any measures which don't already exist in measures-data.json
-    if (!existingMeasure) return;
+    if (!existingMeasure) {
+      const explanation = 'measure doesn\'t exist in measures-data';
+      resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
+      return;
+    };
 
     if (['simpleAverage', 'weightedAverage'].includes(updatedMeasure.overallAlgorithm)) {
       if (existingMeasure.overallAlgorithm !== updatedMeasure.overallAlgorithm) {
-        console.log('making a change to: ' + existingMeasure.measureId);
+        const explanation = 'Making a change to: ' + existingMeasure.measureId;
+        resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
       } else {
-        console.log('no change required for: ' + existingMeasure.measureId);
+        const explanation = 'No change required for: ' + existingMeasure.measureId;
+        resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
       }
       existingMeasure.overallAlgorithm = updatedMeasure.overallAlgorithm;
     } else {
@@ -116,26 +124,32 @@ function mergeMeasures(existingMeasures, updatedMeasures) {
       const stratumPostion = updatedMeasure.overallAlgorithm
         .match(/([0-9]{1,})(st|nd|rd|th) Performance Rate/)[1];
       if (!Array.isArray(existingMeasure.strata)) {
-        console.log('Existing measure: ' + existingMeasure.measureId + ' has no strata.');
+        const explanation = 'Updated measure specifies overall performance rate should be ' + updatedMeasure.overallAlgorithm +
+           ' but existing measure: ' + existingMeasure.measureId + ' has no strata (' + existingMeasure.metricType + ').';
+        resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
         return;
       }
       const existingStratum = existingMeasure.strata[stratumPostion - 1];
       if (existingStratum.name === "overall") {
         if (existingMeasure.overallAlgorithm !== "overallStratumOnly") {
-          console.log('making a change to: ' + existingMeasure.measureId);
+          const explanation = 'Making a change to: ' + existingMeasure.measureId;
+          resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
         } else {
-          console.log('no change required for: ' + existingMeasure.measureId);
+          const explanation = 'No change required for: ' + existingMeasure.measureId;
+          resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
         }        
         existingMeasure.overallAlgorithm = "overallStratumOnly";
       } else {
-        console.log('Strata identified is not the overall strata in existing measures data for measure: ' + existingMeasure.measureId);
-        console.log('Existing stratum: ' + existingStratum.name);
-        console.log('Updated measure: ' + updatedMeasure.overallAlgorithm);
+        const explanation = 'Strata identified is not the overall strata in existing measures data for measure: ' + existingMeasure.measureId +
+          '. Existing stratum: ' + existingStratum.name +
+          '. Updated measure algorithm: ' + updatedMeasure.overallAlgorithm;
+        resultsString += updatedMeasure.ogMeasureId + ',' + explanation + '\n';
       }
     }
   });
 
-  return existingMeasures;
+  // return existingMeasures;
+  return resultsString;
 };
 
 // Loads data from csv file and overwrites staging/measures-data.json
@@ -149,13 +163,14 @@ function importMeasures(stagingMeasuresDataPath, udpatedMeasuresDataPath) {
   updateMeasuresCsv.shift();
 
   const updatedMeasures = convertCsvToMeasures(updateMeasuresCsv, config);
-
-  const measuresWithUpdatedOverallAlgorithms = mergeMeasures(existingMeasures, updatedMeasures);
-  return JSON.stringify(measuresWithUpdatedOverallAlgorithms, null, 2);
+  // const measuresWithUpdatedOverallAlgorithms = mergeMeasures(existingMeasures, updatedMeasures);
+  const resultsString = mergeMeasures(existingMeasures, updatedMeasures);
+  return resultsString;
+  //return JSON.stringify(measuresWithUpdatedOverallAlgorithms, null, 2);
 }
 
 const stagingMeasuresDataPath = process.argv[2];
 const udpatedMeasuresDataPath = process.argv[3];
 
 const updatedMeasures = importMeasures(stagingMeasuresDataPath, udpatedMeasuresDataPath);
-fs.writeFileSync(path.join(__dirname, stagingMeasuresDataPath), updatedMeasures);
+fs.writeFileSync(path.join(__dirname, 'results.csv'), updatedMeasures);
