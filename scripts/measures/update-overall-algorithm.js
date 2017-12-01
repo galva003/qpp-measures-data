@@ -10,8 +10,8 @@ const path = require('path');
  * set of measures.
  *
  * Example:
- * sh$ staging_measures='../../staging/measures-data.json'
- * sh$ updated_measures='../../util/measures/MIPS_Measures_with_Multiple_Performance_Rates_2017-11-29.csv'
+ * staging_measures='../../measures/measures-data.json'
+ * updated_measures='../../util/measures/MIPS_Measures_with_Multiple_Performance_Rates_2017-11-29.csv'
  * node scripts/measures/update-overall-algorithm.js $staging_measures $updated_measures
 */
 
@@ -30,6 +30,9 @@ const mapOverallAlgorithm = (columnValue) => {
       return 'simpleAverage';
       break;
     default:
+      // if we can't map the column directly, it's some ordinal representation
+      // of overall stratum that we will verify when merging with measures
+      // data.
       return columnValue
       break;
   }
@@ -91,10 +94,54 @@ const convertCsvToMeasures = function(records, config) {
   return newMeasures;
 };
 
+// TODO(aimee): Add documentation
+function mergeMeasures(existingMeasures, updatedMeasures) {
+  updatedMeasures.forEach((updatedMeasure) => {
+    const existingMeasure = existingMeasures.find((measure) => {
+      return measure.measureId === updatedMeasure.measureId;
+    });
+
+    // Skip any measures which don't already exist in measures-data.json
+    if (!existingMeasure) return;
+
+    if (['simpleAverage', 'weightedAverage'].includes(updatedMeasure.overallAlgorithm)) {
+      if (existingMeasure.overallAlgorithm !== updatedMeasure.overallAlgorithm) {
+        console.log('making a change to: ' + existingMeasure.measureId);
+      } else {
+        console.log('no change required for: ' + existingMeasure.measureId);
+      }
+      existingMeasure.overallAlgorithm = updatedMeasure.overallAlgorithm;
+    } else {
+      // position of the assignable performance rate, indexed starting starting from 1.
+      const stratumPostion = updatedMeasure.overallAlgorithm
+        .match(/([0-9]{1,})(st|nd|rd|th) Performance Rate/)[1];
+      if (!Array.isArray(existingMeasure.strata)) {
+        console.log('Existing measure: ' + existingMeasure.measureId + ' has no strata.');
+        return;
+      }
+      const existingStratum = existingMeasure.strata[stratumPostion - 1];
+      if (existingStratum.name === "overall") {
+        if (existingMeasure.overallAlgorithm !== "overallStratumOnly") {
+          console.log('making a change to: ' + existingMeasure.measureId);
+        } else {
+          console.log('no change required for: ' + existingMeasure.measureId);
+        }        
+        existingMeasure.overallAlgorithm = "overallStratumOnly";
+      } else {
+        console.log('Strata identified is not the overall strata in existing measures data for measure: ' + existingMeasure.measureId);
+        console.log('Existing stratum: ' + existingStratum.name);
+        console.log('Updated measure: ' + updatedMeasure.overallAlgorithm);
+      }
+    }
+  });
+
+  return existingMeasures;
+};
+
 // Loads data from csv file and overwrites staging/measures-data.json
 function importMeasures(stagingMeasuresDataPath, udpatedMeasuresDataPath) {
   const qpp = fs.readFileSync(path.join(__dirname, stagingMeasuresDataPath), 'utf8');
-  const allMeasures = JSON.parse(qpp);
+  const existingMeasures = JSON.parse(qpp);
 
   const csv = fs.readFileSync(path.join(__dirname, udpatedMeasuresDataPath), 'utf8');
   const updateMeasuresCsv = parse(csv, 'utf8');
@@ -103,14 +150,12 @@ function importMeasures(stagingMeasuresDataPath, udpatedMeasuresDataPath) {
 
   const updatedMeasures = convertCsvToMeasures(updateMeasuresCsv, config);
 
-  //const mergedMeasures = mergeMeasures(allMeasures, qcdrMeasures, outputPath);
-  return JSON.stringify(updatedMeasures, null, 2);
+  const measuresWithUpdatedOverallAlgorithms = mergeMeasures(existingMeasures, updatedMeasures);
+  return JSON.stringify(measuresWithUpdatedOverallAlgorithms, null, 2);
 }
 
 const stagingMeasuresDataPath = process.argv[2];
 const udpatedMeasuresDataPath = process.argv[3];
 
-const newMeasures = importMeasures(stagingMeasuresDataPath, udpatedMeasuresDataPath);
-console.log(newMeasures);
-// const outputPath = stagingMeasuresDataPath;
-// fs.writeFileSync(path.join(__dirname, outputPath), newMeasures);
+const updatedMeasures = importMeasures(stagingMeasuresDataPath, udpatedMeasuresDataPath);
+fs.writeFileSync(path.join(__dirname, stagingMeasuresDataPath), updatedMeasures);
