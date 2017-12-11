@@ -1,0 +1,387 @@
+Measure #,eMeasure ID,Measure Title,Claims/Registry Measure Tag,eMeasure Specific Measure Tag**,Additional Analytic Logic or Guidance,Inverse,Non-Billable Codes in the Denominator,# of Perf Rates,Overall Perf Rate,"2017 Reporting Option (Claims, Registry, eHR)"
+1,CMS122v5,Diabetes: Hemoglobin A1c Poor Control (>9%),Patient - Intermediate,Patient-Based Measure,"Claims: When a QDC is reported for an eligible patient during the performance period, use the most recent (the last) qualifying claim WITH a QDC reported during the performance period.                                                                                                                        • Performance hierarchy is reversed to determine the most favorable instance of reporting for performance rate calculations (fails performance then meets performance) - used when multiple QDCs are reported on the most recent claim/day.                                                                                                      • Determine ""most recent"" by date of service for QDCs submitted.  ",Y,N,1,N/A,"Claims, Registry, eHR"
+5,CMS135v5,Heart Failure (HF): Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor Blocker (ARB) Therapy for Left Ventricular Systolic Dysfunction (LVSD),Patient - Process / Visit,Patient-Based Measure,This measure has multiple denominator options based on care setting (outpatient vs. inpatient).  This measure requires the reporting of only one data completeness and performance rate. ,N,Y,1,N/A,"Registry, eHR"
+6,,Coronary Artery Disease (CAD): Antiplatelet Therapy,Patient - Process,N/A,,N,N,1,N/A,Registry
+7,CMS145v5,Coronary Artery Disease (CAD): Beta-Blocker Therapy—Prior Myocardial Infarction (MI) or Left Ventricular Systolic Dysfunction (LVEF <40%),Patient - Process,Patient-Based Measure,"This measure has multiple denominator options based on diagnosis.  This measure requires the reporting of two performance rates. An overall data completeness and performance rate needs to be calculated for this measure. A weighted average will be determined at the numerator and denominator count level. The overall data completeness is determined by summing the data completeness numerator counts of each submeasure and dividing by the sum of the data completeness denominator counts of each submeasure. The overall performance rate is determined by summing the performance numerator counts of each submeasure and dividing by the sum of the performance denominator counts of each submeasure.
+There are two reporting criteria for this measure:
+(1) Percentage of patients with a diagnosis of CAD or history of cardiac surgery who have a current or prior LVEF < 40% prescribed a beta blocker
+(2) Percentage of patients with a diagnosis of CAD or history of cardiac surgery who have prior myocardial infarction  prescribed a beta blocker ",N,Y,2,Weighted Average,"Registry, eHR"
+8,CMS144v5,Heart Failure (HF): Beta-Blocker Therapy for Left Ventricular Systolic Dysfunction (LVSD),Patient - Process / Visit,Patient-Based Measure,This measure has multiple denominator options based on care setting (outpatient vs. inpatient).  This measure requires the reporting of only one data completeness and performance rate. ,N,Y,1,N/A,"Registry, eHR"
+9,CMS128v5,Anti-depressant Medication Management,N/A,Patient-Based Measure,"The eCQM measure requires that two performance rates are reported. 
+a. Percentage of patients who remained on an antidepressant medication for at least 84 days (12 weeks). 
+b. Percentage of patients who remained on an antidepressant medication for at least 180 days (6 months).                                                                                                                                                    
+                                                                                                                     An overall performance rate needs to be calculated for this measure. A simple average of the performance rates will be determined to calculate the overall performance rate. This is determined by adding the performance rate percentages for each submeasure and divide by the total number of component submeasures.
+",N,N,2,Simple Average,eHR
+12,CMS143v5,Primary Open Angle Glaucoma (POAG): Optic Nerve Evaluation,Patient - Process,Patient-Based Measure,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,Y,1,N/A,"Claims, Registry, eHR"
+14,,Age-Related Macular Degeneration (AMD): Dilated Macular Examination,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+18,CMS167v5,Diabetic Retinopathy: Documentation of Presence or Absence of Macular Edema and Level of Severity of Retinopathy,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+19,CMS142v5,Diabetic Retinopathy: Communication with the Physician Managing Ongoing Diabetes Care,Patient - Process,Patient-Based Measure,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,Y,1,N/A,"Claims, Registry, eHR"
+21,,Perioperative Care: Selection of Prophylactic Antibiotic – First OR Second Generation Cephalosporin,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+23,,Perioperative Care: Venous Thromboembolism (VTE) Prophylaxis (When Indicated in ALL Patients),Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+24,,Communication with the Physician or Other Clinician Managing On-going Care Post-Fracture for Men and Women Aged 50 Years and Older,Episode (TIN/NPI/Bene-level),N/A,"Claims: • Count each unique diagnosis as an episode for an TIN/NPI/Bene unless multiple diagnoses appear on the same claim.      
+• Multiple qualifying ICD10, CPT or HCPC procedure on a single claim are counted once. (A single claim can be counted a maximum of once for an episode per TIN/NPI/Bene combo regardless of the number of qualifying DXs or procedures that exist).
+• Multiple claims with any intersecting diagnosis will be counted once. Intersecting claims with diagnosis codes will be counted once. All claims that share diagnosis codes are combined into one episode, given they have the same TIN/NPI/Bene.  
+• If the TIN/NPI/Bene combo has multiple claims containing ""different"" qualifying DX codes that have not been submitted during the performance period, then these claims may each count as additional episodes. 
+• Use the most favorable instance of reporting for performance rates if multiple conflicting QDCs exist on a qualifying episode
+• The QDC must exist on the claim with the qualifying denom episode (overarching rule for all measures)
+This measure has multiple denominator options based on care setting (outpatient vs. procedure).  This measure requires the reporting of only one data completeness and performance rate.  ",N,N,1,N/A,"Claims, Registry"
+32,,Stroke and Stroke Rehabilitation: Discharged on Antithrombotic Therapy,Episode (use Visit logic),N/A,Claims: Each time a discharge code 99238 or 99239 is included on a claim a quality-data code is to be reported. Utilize Visit logic for this measure. ,N,N,1,N/A,"Claims, Registry"
+39,,Screening for Osteoporosis for Women Aged 65-85 Years of Age,Patient - Process,N/A,"Diagnosis of osteoporosis on the date of service is not considered denominator eligible. 
+",N,N,1,N/A,"Claims, Registry"
+43,,Coronary Artery Bypass Graft (CABG): Use of Internal Mammary Artery (IMA) in Patients with Isolated CABG Surgery,Procedure: use Episode logic,N/A,,N,N,1,N/A,Registry
+44,,Coronary Artery Bypass Graft (CABG): Preoperative Beta-Blocker in Patients with Isolated CABG Surgery,Procedure,N/A,,N,N,1,N/A,Registry
+46,,Medication Reconciliation Post-Discharge,Episode (Regardless of TIN/NPI),N/A,"This measure requires the reporting of three performance rates. The third performance rate outlined in the measure specification should be utilized for an overall reporting and performance rate for this measure.
+Claims: 
+• Age must be >= to 18 on the outpt visit date. 
+• If med reconciliation is reported > once for an inpt discharge (utilizing Part B claims), the most favorable QDC(s) reported w/in 30 days after the discharge should count for the episode for performance calculations.
+• The 30 day episode will start 30 days minus the 1st expense date of an outpt visit where a denom code is present on the claim’s line item. If multiple outpt visits appear (where denom codes are on multiple line items) on the same claim take the denom code line item with the latest expense date (of the denom codes that fall within 30-days of the inpt. discharge  on that claim).
+•  Hospital (inpt Part B discharge) ""hidden"" codes are at the bene-level regardless of TIN/NPI. Correlate eligible cases with non-denom inpt codes for bene regardless of TIN/NPI to find last inpt expense date, then count 30 days per episode from that date.
+• Inpt discharges may occur up to 30 days prior to the beginning of the performance period (January 1, 2017), but outpt visits must occur during the reporting period (January 1 - December 31, 2017).                                                                                                                                                    • Take the last inpt expense date of the line item for the relevant “hidden” inpatient codes when multiple inpt codes are submitted on consecutive days or when one inpt code spans several expense dates, the last date should count as the date of inpt discharge.                                                                                                                                                    • The last inpt discharge during the 30 day episode will override any previous inpt discharges. 
+• If the outpatient visit occurs during the hospital visit (same day as an inpatient code is submitted), then it will not count as an instance of reporting. An outpatient visit must occur at least one day AFTER an inpatient discharge (break in inpatient codes) to count as an instance of reporting.
+• REFER TO THE ""HIDDEN CODES"" TAB OF THE SINGLE SOURCE FOR A COMPLETE LISTING OF THE HOSPITAL INPATIENT DISCHARGE ""HIDDEN"" CODES                                                                                                                                                                                                                                                                                                                                                                          
+",N,N,3,3rd Performance Rate,"Claims, Registry"
+,,,,,,,,,,
+47,,Care Plan,Patient - Process,N/A,Claims: Exclude line items from the denominator when CPT codes are seen with a Place of Service (POS) = 23.,N,N,1,N/A,"Claims, Registry"
+48,,Urinary Incontinence: Assessment of Presence or Absence of Urinary Incontinence in Women Aged 65 Years and Older,Patient - Process,N/A,,N,N,1,N/A,"Claims, Registry"
+50,,Urinary Incontinence: Plan of Care for Urinary Incontinence in Women Aged 65 Years and Older,Patient - Process,N/A,,N,N,1,N/A,"Claims, Registry"
+51,,Chronic Obstructive Pulmonary Disease (COPD): Spirometry Evaluation,Patient - Intermediate,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+52,,Chronic Obstructive Pulmonary Disease (COPD): Inhaled Bronchodilator Therapy,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+65,CMS154v5,Appropriate Treatment for Children with Upper Respiratory Infection (URI),Episode (TIN/NPI/Bene-level),Episode-of-Care Measure,,N,N,1,N/A,"Registry, eHR"
+66,CMS146v5,Appropriate Testing for Children with Pharyngitis,Episode (TIN/NPI/Bene-level),Episode-of-Care Measure,,N,Y,1,N/A,"Registry, eHR"
+67,,Hematology: Myelodysplastic Syndrome (MDS) and Acute Leukemias: Baseline Cytogenetic Testing Performed on Bone Marrow,Patient - Process,N/A,,N,N,1,N/A,Registry
+68,,Hematology: Myelodysplastic Syndrome (MDS): Documentation of Iron Stores in Patients Receiving Erythropoietin Therapy,Patient - Process,N/A,,N,N,1,N/A,Registry
+69,,Hematology: Multiple Myeloma: Treatment with Bisphosphonates,Patient - Process,N/A,,N,N,1,N/A,Registry
+70,,Hematology: Chronic Lymphocytic Leukemia (CLL): Baseline Flow Cytometry,Patient - Process,N/A,"
+",N,N,1,N/A,Registry
+76,,Prevention of Central Venous Catheter (CVC) Related Bloodstream Infections,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+91,,Acute Otitis Externa (AOE): Topical Therapy,Episode (TIN/NPI/Bene-level),N/A,"Claims: Approved to count an episode as any claims for the TIN/NPI/Bene that qualify for the measure within a 30-day timeframe. Use the last expense date corresponding to qualifying line items (denominator dx or encounter codes) on the first claim to start the 30-day episode.  The 30-day continues forward to include any subsequent claim(s) where the 1st expense date on qualifying line items (denominator dx or procedure codes) is within 30-days of the last expense date on that 1st claim. The first claim with a QDC within the episode is the QDC to use when calculating performance .Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+93,,Acute Otitis Externa (AOE): Systemic Antimicrobial Therapy – Avoidance of Inappropriate Use,Episode (TIN/NPI/Bene-level),N/A,"Claims: Approved to count an episode as any claims for the TIN/NPI/Bene that qualify for the measure within a 30-day timeframe. Use the last expense date corresponding to qualifying line items (denominator dx or encounter codes) on the first claim to start the 30-day episode.  The 30-day continues forward to include any subsequent claim(s) where the 1st expense date on qualifying line items (denominator dx or procedure codes) is within 30-days of the last expense date on that 1st claim. The first claim with a QDC within the episode is the QDC to use when calculating performance.  Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+99,,Breast Cancer Resection Pathology Reporting: pT Category (Primary Tumor) and pN Category (Regional Lymph Nodes) with Histologic Grade,Procedure,N/A,Claims: Only one QDC per date of service for a patient is required. ,N,N,1,N/A,"Claims, Registry"
+100,,Colorectal Cancer Resection Pathology Reporting: pT Category (Primary Tumor) and pN Category (Regional Lymph Nodes) with Histologic Grade,Procedure,N/A,Claims: Only one QDC per date of service for a patient is required. ,N,N,1,N/A,"Claims, Registry"
+102,CMS129v6,Prostate Cancer: Avoidance of Overuse of Bone Scan for Staging Low Risk Prostate Cancer Patients,Episode (Regardless of TIN/NPI),Patient-Based Measure,,N,N,1,N/A,"Registry, eHR"
+104,,Prostate Cancer: Adjuvant Hormonal Therapy for High Risk or Very High Risk Prostate Cancer,Episode (Regardless of TIN/NPI),N/A,,N,N,1,N/A,Registry
+107,CMS161v5,Adult Major Depressive Disorder (MDD): Suicide Risk Assessment,N/A,Episode-of-Care Measure,,N,N,1,N/A,eHR 
+109,,Osteoarthritis (OA): Function and Pain Assessment,Visit,N/A,,N,N,1,N/A,"Claims, Registry"
+110,"CMS147v5
+",Preventive Care and Screening: Influenza Immunization,Patient - Periodic,Patient-Based Measure,"Report a minimum of once for visits occurring between January 1, 2017 and March 31, 2017 for the 2016-2017 influenza season and a minimum of once for visits occurring between October 1, 2017 and December 31, 2017 for the 2017-2018 influenza season. For example, if there is a visit in January 2017 and a visit in November 2017, both of these visits would count in the denominator (a count of 2). However, if there are two visits which occur in January 2017 and one in February 2017, only one of these needs to be reported to account for the 2016-2017 influenza season.  
+Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,Y,1,N/A,"Claims, Registry, eHR"
+111,CMS127v5,Pneumonia Vaccination Status for Older Adults,Patient - Process,Patient-Based Measure,,N,N,1,N/A,"Claims, Registry, eHR"
+112,"CMS125v5
+",Breast Cancer Screening,Patient - Process,Patient-Based Measure,"The measure has a denominator of women 50 to 74 years of age with a visit during the performance period.  This is to ensure that the patient sample maintains the proper age criteria within the performance period.  Therefore, women ages 50-52 are included in the measure if they had a visit and a mammogram since age 50, but the look back only applies to patients age 52-74.  
+",N,N,1,N/A,"Claims, Registry, eHR"
+113,CMS130v5,Colorectal Cancer Screening,Patient - Process,Patient-Based Measure,The measure has a denominator of 51-75 to capture all adults at least 50 years of age and older who may have had a screening. This is to ensure that the patient sample maintains an age criteria of 50 years of age within the performance period.,N,N,1,N/A,"Claims, Registry, eHR"
+116,,Avoidance of Antibiotic Treatment in Adults With Acute Bronchitis,Visit: use Episode (TIN/NPI/Bene- level)  ,N/A,,N,Y,1,N/A,Registry
+117,CMS131v5,Diabetes: Eye Exam,Patient - Process,Patient-Based Measure,,N,N,1,N/A,"Claims, Registry, eHR"
+118,,Coronary Artery Disease (CAD): Angiotensin-Converting Enzyme (ACE) Inhibitor or Angiotensin Receptor Blocker (ARB) Therapy - Diabetes or Left Ventricular Systolic Dysfunction (LVEF < 40%),Patient - Process,N/A,"The measure has multiple denominator options based on diagnosis. This measure requires the reporting of only one data completeness and performance rate. 
+",N,N,1,N/A,Registry
+119,CMS134v5,Diabetes: Urine Protein Screening,Patient - Process,Patient-Based Measure,,N,N,1,N/A,"Registry, eHR"
+122,,Adult Kidney Disease: Blood Pressure Management,Visit,N/A,"This measure has multiple denominator options.  This measure requires the reporting of three performance rates. The third performance rate outlined in the measure specification should be utilized for an overall data completeness and performance rate for this measure.  
+
+This measure will be calculated with 3 performance rates:
+1) Percentage of patient visits with blood pressure results < 140/90 mmHg
+2) Percentage of patient visits with blood pressure results ≥ 140/90 mmHg and plan of care
+3) Overall percentage of patient visits with blood pressure results < 140/90 mmHg and ≥ 140/90 mmHg with a documented plan of care
+",N,N,3,3rd Performance Rate,Registry
+126,,"Diabetes Mellitus: Diabetic Foot and Ankle Care, Peripheral Neuropathy – Neurological Evaluation",Patient - Process,N/A,,N,N,1,N/A,Registry
+127,,"Diabetes Mellitus: Diabetic Foot and Ankle Care, Ulcer Prevention – Evaluation of Footwear",Patient - Process,N/A,,N,N,1,N/A,Registry
+128,"CMS69v5
+",Preventive Care and Screening: Body Mass Index (BMI) Screening and Follow-Up Plan,Patient - Intermediate,Patient-Based Measure,"Claims: When a QDC is reported for an eligible patient during the performance period, use the most recent (the last) qualifying claim WITH a QDC reported during the performance period. Determine most recent by date of service for QDCs submitted.
+•  The BMI can be calculated either within the prior 6 months of the current qualifying visit OR calculated during the current qualifying visit, during measurement period.  The BMI documented in the medical record may be reported if done in the provider’s office/facility or if a BMI is documented within the previous six months in outside medical records obtained by the provider.
+
+eHR: The eCQM measure requires the reporting of two performance rates. An overall performance rate needs to be calculated for this measure. A weighted average will be determined at the numerator and denominator count level. The overall performance rate is determined by summing the performance numerator counts of each submeasure and dividing by the sum of the performance denominator counts of each submeasure.                                                                                                  Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,"Claims/ Registry = 1
+eCQM = 2",eCQM = Weighted Average,"Claims, Registry, eHR"
+130,"CMS68v6
+",Documentation of Current Medications in the Medical Record,Visit,Episode-of-Care Measure,,N,N,1,N/A,"Claims, Registry, eHR"
+131,,Pain Assessment and Follow-Up,Visit,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+134,CMS2v6,Preventive Care and Screening: Screening for Clinical Depression and Follow-Up Plan,Patient - Process,Patient-Based Measure,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.
+",N,N,1,N/A,"Claims, Registry, eHR"
+137,,Melanoma: Continuity of Care – Recall System,Patient - Process,N/A,,N,N,1,N/A,Registry
+138,,Melanoma: Coordination of Care,Visit,N/A,This measure has multiple denominator options. This measure requires the reporting of only one data completeness and performance rate. ,N,N,1,N/A,Registry
+140,,Age-Related Macular Degeneration (AMD): Counseling on Antioxidant Supplement,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+141,,Primary Open-Angle Glaucoma (POAG): Reduction of Intraocular Pressure (IOP) by 15% OR Documentation of a Plan of Care,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+143,CMS157v5,Oncology: Medical and Radiation – Pain Intensity Quantified,Visit,Episode-of-Care Measure,No requirement exists to report both measures (143 and 144) when paired.  Any paired measure reported would count as an individual measure.  The system should not require that an eligible clinician report both of the paired measures. The system should consider each of these measures as an individually reportable measure.  An eligible clinician may report both or only one of the paired measures as part of the measures threshold required for data completeness. ,N,N,1,N/A,"Registry, eHR"
+144,,Oncology: Medical and Radiation – Plan of Care for Pain,Visit,N/A,No requirement exists to report both measures (143 and 144) when paired.  Any paired measure reported would count as an individual measure.  The system should not require that an eligible clinician report both of the paired measures. The system should consider each of these measures as an individually reportable measure.  An eligible clinician may report both or only one of the paired measures as part of the measures threshold required for data completeness. ,N,N,1,N/A,Registry
+145,,Radiology: Exposure Time Reported for Procedures Using Fluoroscopy,Procedure,N/A,,N,Y,1,N/A,"Claims, Registry"
+146,,Radiology: Inappropriate Use of “Probably Benign” Assessment Category in Mammography Screening,Procedure,N/A,Performance hierarchy is reversed to determine the most favorable instance of reporting for performance rate calculations (fails performance then meets performance) - used when multiple QDCs are reported on the same claim/day.                                                                                           ,Y,N,1,N/A,"Claims, Registry"
+147,,Nuclear Medicine: Correlation with Existing Imaging Studies for All Patients Undergoing Bone Scintigraphy,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+154,,Falls: Risk Assessment,Patient - Process,N/A,No requirement exists to report both measures (154 and 155) when paired.  Any paired measure reported would count as an individual measure.  The system should not require that an eligible clinician report both of the paired measures. The system should consider each of these measures as an individually reportable measure.  An eligible clinician may report both or only one of the paired measures as part of the measures threshold required for data completeness.  ,N,N,1,N/A,"Claims, Registry"
+155,,Falls: Plan of Care,Patient - Process,N/A,"Denominator coding is CPT II code 1100F (without a 1P, 2P, 3P or 8P modifier) AND encounter codes from measure 154.
+
+No requirement exists to report both measures (154 and 155)  when paired.  Any paired measure reported would count as an individual measure.  The system should not require that an eligible clinician report both of the paired measures. The system should consider each of these measures as an individually reportable measure.  An eligible clinician may report both or only one of the paired measures as part of the measures threshold required for data completeness.
+",N,N,1,N/A,"Claims, Registry"
+156,,Oncology: Radiation Dose Limits to Normal Tissues,Patient - Process,N/A,,N,N,1,N/A,"Claims, Registry"
+160,CMS52v5,HIV/AIDS: Pneumocystis Jiroveci Pneumonia (PCP) Prophylaxis,N/A,Patient-Based Measure,"The eCQM measure requires the reporting of three performance rates. An overall performance rate needs to be calculated for this measure. A weighted average will be determined at the numerator and denominator count level. The overall performance rate is determined by summing the performance numerator counts of each submeasure and dividing by the sum of the performance denominator counts of each submeasure.
+",N,N,3,Weighted Average,eHR 
+163,CMS123v5,Diabetes: Foot Exam,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+164,,Coronary Artery Bypass Graft (CABG): Prolonged Intubation,Procedure,N/A,,Y,N,1,N/A,Registry
+165, ,Coronary Artery Bypass Graft (CABG): Deep Sternal Wound Infection Rate ,Procedure,N/A,,Y,N,1,N/A,Registry
+166, ,Coronary Artery Bypass Graft (CABG): Stroke,Procedure,N/A,,Y,N,1,N/A,Registry
+167, ,Coronary Artery Bypass Graft (CABG): Postoperative Renal Failure,Procedure,N/A,,Y,N,1,N/A,Registry
+168, ,Coronary Artery Bypass Graft (CABG): Surgical Re-Exploration,Procedure,N/A,,Y,N,1,N/A,Registry
+176,,Rheumatoid Arthritis (RA): Tuberculosis Screening,Patient - Process,N/A,,N,N,1,N/A,Registry
+177, ,Rheumatoid Arthritis (RA): Periodic Assessment of Disease Activity,Patient - Process,N/A,,N,N,1,N/A,Registry
+178,,Rheumatoid Arthritis (RA): Functional Status Assessment ,Patient - Process,N/A,,N,N,1,N/A,Registry
+179,,Rheumatoid Arthritis (RA): Assessment and Classification of Disease Prognosis,Patient - Process,N/A,,N,N,1,N/A,Registry
+180,,Rheumatoid Arthritis (RA): Glucocorticoid Management ,Patient - Process,N/A,,N,N,1,N/A,Registry
+181,,Elder Maltreatment Screen and Follow-Up Plan,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+182,,Functional Outcome Assessment ,Visit,N/A,,N,N,1,N/A,"Claims, Registry"
+185,,Colonoscopy Interval for Patients with a History of Adenomatous Polyps – Avoidance of Inappropriate Use,Procedure,N/A,"CPT codes 44388, 44389, 44392, 44394, 45378, 45380, 45381,  45384, 45385 that has a modifier 52, 53, 73 or 74 are not to be included in the eligible denominator.                                            
+Modifiers not relevant for G0105, because CPT I modifiers do not apply to G-codes.",N,N,1,N/A,"Claims, Registry"
+187,,Stroke and Stroke Rehabilitation: Thrombolytic Therapy,Episode,N/A,,N,N,1,N/A,Registry
+191,CMS133v5,Cataracts: 20/40 or Better Visual Acuity within 90 Days Following Cataract Surgery,Procedure,Episode-of-Care Measure,,N,N,1,N/A,"Registry, eHR"
+192,CMS132v5,Cataracts: Complications within 30 Days Following Cataract Surgery Requiring Additional Surgical Procedures,Procedure,Episode-of-Care Measure, ,Y,N,1,N/A,"Registry, eHR"
+195,,Radiology: Stenosis Measurement in Carotid Imaging Reports,Procedure,N/A,,N,Y,1,N/A,"Claims, Registry"
+204,CMS164v5  ,Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antithrombotic,Patient - Process,Patient-Based Measure,,N,Y,1,N/A,"Claims, Registry, eHR"
+205,,"HIV/AIDS: Sexually Transmitted Disease Screening for Chlamydia, Gonorrhea, and Syphilis",Patient - Process,N/A,,N,N,1,N/A,Registry
+217,,Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Knee Impairments,Episode,N/A,,N,N,1,N/A,Registry
+218,,Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Hip Impairments,Episode,N/A,,N,N,1,N/A,Registry
+219,,"Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Lower Leg, Foot or Ankle Impairments",Episode,N/A,,N,N,1,N/A,Registry
+220,,Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Lumbar Spine Impairments,Episode,N/A,,N,N,1,N/A,Registry
+221,,Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Shoulder Impairments,Episode,N/A,,N,N,1,N/A,Registry
+222,,"Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Elbow, Wrist or Hand Impairments",Episode,N/A,,N,N,1,N/A,Registry
+223,,"Functional Deficit: Change in Risk-Adjusted Functional Status for Patients with Neck, Cranium, Mandible, Thoracic Spine, Ribs, or Other General Orthopaedic Impairments",Episode,N/A,,N,N,1,N/A,Registry
+224,,Melanoma: Overutilization of Imaging Studies in Melanoma,Patient - Process,N/A,The measure has multiple denominator options. This measure requires the reporting of only one reporting and performance rate. ,N,N,1,N/A,Registry
+225,,Radiology: Reminder System for Screening Mammograms,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+226,CMS138v5,Preventive Care and Screening: Tobacco Use: Screening and Cessation Intervention,Patient - Process,Patient-Based Measure,"Claims: Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.
+",N,Y,1,N/A,"Claims, Registry, eHR"
+236,CMS165v5,Controlling High Blood Pressure,Patient - Intermediate,Patient-Based Measure,"Claims: To describe both systolic and diastolic blood pressure values, each must be reported separately.
+•  When a QDC is reported for an eligible patient during the performance period, use the most recent (the last) qualifying claim WITH a QDC reported during the performance period. Determine ""most recent"" by date of service of the QDCs submitted. This date should have the same date of service for both QDCs required in performance calculations.            
+",N,N,1,N/A,"Claims, Registry, eHR"
+238,CMS156v5,Use of High-Risk Medications in the Elderly,Patient - Process,Patient-Based Measure,This measure has multiple denominator options.  This measure requires the reporting of two performance rates. The first performance rate (Percentage of patients who were ordered at least one high-risk medication) defined in the measure will be utilized as the overall data completeness and performance rate for this measure. ,Y,N,2,1st Performance Rate,"Registry, eHR"
+239,CMS155v5,Weight Assessment and Counseling for Nutrition and Physical Activity for Children and Adolescents,N/A,Patient-Based Measure,"The eCQM measure requires the reporting of three performance rates. An overall performance rate needs to be calculated for this measure. A simple average of the performance rates will be determined to calculate the overall performance rate. This is determined by adding the performance rate percentages for each submeasure and divide by the total number of component submeasures. 
+",N,N,3,Simple Average,eHR 
+240,CMS117v5,Childhood Immunization Status,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+243,,Cardiac Rehabilitation Patient Referral from an Outpatient Setting,Patient - Process,N/A,,N,N,1,N/A,Registry
+249,,Barrett's Esophagus,Procedure,N/A,Claims: Only one QDC per date of service for a patient is required. ,N,N,1,N/A,"Claims, Registry"
+250,,Radical Prostatectomy Pathology Reporting,Procedure,N/A,Claims: Only one QDC per date of service for a patient is required. ,N,N,1,N/A,"Claims, Registry"
+251,,Quantitative Immunohistochemical (IHC) Evaluation of Human Epidermal Growth Factor Receptor 2 Testing (HER2) for Breast Cancer Patients,Procedure,N/A,"Claims: The measure should be reported each time a quantitative HER2 IHC pathology examination is performed during the performance period for patients with breast cancer; however, only one QDC per date of service for a patient is required.",N,N,1,N/A,"Claims, Registry"
+254,,Ultrasound Determination of Pregnancy Location for Pregnant Patients with Abdominal Pain,Episode (TIN/NPI/Bene-level),N/A,"Claims: Use episode logic even though it does not match instructions in specifications
+Counted once per claim for each TIN/NPI/Bene
+•  Multiple ICD10- codes on a single claim count once. 
+•  These will be treated as episode measures with no special coding required.                                                                                                                               •  Line items with CPT I coding require a place of service code ""23"" to be included in the denominator.",N,N,1,N/A,"Claims, Registry"
+255,,Rh Immunoglobulin (Rhogam) for Rh-Negative Pregnant Women at Risk of Fetal Blood Exposure,Episode (TIN/NPI/Bene-level),N/A,"Claims: Use episode logic even though it does not match instructions in specifications
+Counted once per claim for each TIN/NPI/Bene
+•  Multiple ICD10 codes on a single claim count once.           
+•  These will be treated as episode measures with no special coding required.                                                                                                                               •  Line items with CPT I coding require a place of service code ""23"" to be included in the denominator.",N,N,1,N/A,"Claims, Registry"
+257,,Statin Therapy at Discharge after Lower Extremity Bypass (LEB),Procedure,N/A,,N,N,1,N/A,Registry
+258,,Rate of Open Repair of Small or Moderate Non-Ruptured Abdominal Aortic Aneurysms (AAA) without Major Complications (Discharged to Home by Post-Operative Day #7),Procedure,N/A,,N,N,1,N/A,Registry
+259,,Rate of Endovascular Aneurysm Repair (EVAR) of Small or Moderate Non-Ruptured Abdominal Aortic Aneurysms (AAA) without Major Complications (Discharged to Home by Post-Operative Day #2),Procedure,N/A,,N,N,1,N/A,Registry
+260,,"Rate of Carotid Endarterectomy (CEA) for Asymptomatic Patients, without Major Complications (Discharged to Home by Post-Operative Day #2)",Procedure,N/A,,N,N,1,N/A,Registry
+261,,Referral for Otologic Evaluation for Patients with Acute or Chronic Dizziness,Patient - Process,N/A,,N,N,1,N/A,"Claims, Registry"
+262,,Image Confirmation of Successful Excision of Image-Localized Breast Lesion,Procedure,N/A,,N,N,1,N/A,Registry
+263,,Preoperative Diagnosis of Breast Cancer,Procedure,N/A,,N,N,1,N/A,Registry
+264,,Sentinel Lymph Node Biopsy for Invasive Breast Cancer,Procedure,N/A,,N,N,1,N/A,Registry
+265,,Biopsy Follow-Up,Patient - Process,N/A,,N,N,1,N/A,Registry
+268,,Epilepsy: Counseling for Women of Childbearing Potential with Epilepsy,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+271,,Inflammatory Bowel Disease (IBD): Preventive Care: Corticosteroid Related Iatrogenic Injury – Bone Loss Assessment,Patient - Process,N/A,,N,N,1,N/A,Registry
+275,,Inflammatory Bowel Disease (IBD): Assessment of Hepatitis B Virus (HBV) Status Before Initiating Anti-TNF (Tumor Necrosis Factor) Therapy,Patient - Process,N/A, ,N,N,1,N/A,Registry
+276,,Sleep Apnea: Assessment of Sleep Symptoms,Patient - Process,N/A,,N,N,1,N/A,Registry
+277,  ,Sleep Apnea: Severity Assessment at Initial Diagnosis,Patient - Process,N/A,,N,N,1,N/A,Registry
+278, ,Sleep Apnea: Positive Airway Pressure Therapy Prescribed,Patient - Process,N/A,, N,N,1,N/A,Registry
+279, ,Sleep Apnea: Assessment of Adherence to Positive Airway Pressure Therapy,Patient - Process,N/A,,N,N,1,N/A,Registry
+281,CMS149v5,Dementia: Cognitive Assessment, N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+282,,Dementia: Functional Status Assessment,Patient - Process,N/A,,N,N,1,N/A,Registry
+283,,Dementia: Neuropsychiatric Symptom Assessment,Patient - Process,N/A,,N,N,1,N/A,Registry
+284, ,Dementia: Management of Neuropsychiatric Symptoms,Patient - Process,N/A,,N,N,1,N/A,Registry
+286,  ,Dementia: Counseling Regarding Safety Concerns,Patient - Process,N/A,,N,N,1,N/A,Registry
+288,,Dementia: Caregiver Education and Support,Patient - Process,N/A,,N,N,1,N/A,Registry
+290, ,Parkinson’s Disease: Psychiatric Symptoms Assessment for Patients with Parkinson’s Disease,Patient - Process,N/A,,N,N,1,N/A,Registry
+291, ,Parkinson’s Disease: Cognitive Impairment or Dysfunction Assessment,Patient - Process,N/A,,N,N,1,N/A,Registry
+293,, Parkinson’s Disease: Rehabilitative Therapy Options,Patient - Process,N/A,,N,N,1,N/A,Registry 
+294, ,Parkinson’s Disease: Parkinson’s Disease Medical and Surgical Treatment Options Reviewed,Patient - Process,N/A,,N,N,1,N/A,Registry 
+303,,Cataracts: Improvement in Patient’s Visual Function within 90 Days Following Cataract Surgery,Procedure,N/A,,N,N,1,N/A,Registry
+304,,Cataracts: Patient Satisfaction within 90 Days Following Cataract Surgery,Procedure,N/A,,N,N,1,N/A,Registry
+305,CMS137v5,Initiation and Engagement of Alcohol and Other Drug Dependence Treatment,N/A,Patient-Based Measure,The eCQM measure requires the reporting of two performance rates. An overall performance rate needs to be calculated for this measure. A simple average of the performance rates will be determined to calculate the overall performance rate. This is determined by adding the performance rate percentages for each submeasure and divide by the total number of component submeasures. ,N,N,2,Simple Average,eHR 
+309,CMS124v5,Cervical Cancer Screening,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+310,CMS153v5,Chlamydia Screening for Women,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+312,CMS166v6,Use of Imaging Studies for Low Back Pain,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+317,CMS22v5,Preventive Care and Screening: Screening for High Blood Pressure and Follow-Up Documented,Patient - Process,Patient-Based Measure,"Encounter codes with Telehealth modifiers GQ, GT and an active diagnosis of Hypertension would not  be considered denominator eligible encounters.
+",N,N,1,N/A,"Claims, Registry, eHR"
+318,CMS139v5,Falls: Screening for Future Fall Risk,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+320,,Appropriate Follow-Up Interval for Normal Colonoscopy in Average Risk Patients,Patient - Process,N/A,"Denominator eligible CPT codes 44388, 45378 submitted with a modifier 52, 53, 73, and 74 should be excluded from the denominator for claims or excluded by the registry.  If QDCs are submitted on the same claim for multiple measures, exclude only the line item with the modifier.                                              
+Modifiers not relevant for G0121, because CPT I modifiers do not apply to G-codes.",N,N,1,N/A,"Claims, Registry"
+322,,Cardiac Stress Imaging Not Meeting Appropriate Use Criteria: Preoperative Evaluation in Low Risk Surgery Patients,Procedure,N/A, ,Y,N,1,N/A,Registry
+323,,Cardiac Stress Imaging Not Meeting Appropriate Use Criteria: Routine Testing After Percutaneous Coronary Intervention (PCI),Procedure,N/A,,Y,N,1,N/A,Registry
+,,"Cardiac Stress Imaging Not Meeting Appropriate Use Criteria: Testing in Asymptomatic, Low-Risk Patients",Procedure,N/A,,Y,N,1,N/A,Registry
+325,,Adult Major Depressive Disorder (MDD): Coordination of Care of Patients with Specific Comorbid Conditions,Patient - Process,N/A,,N,N,1,N/A,Registry
+326,,Atrial Fibrillation and Atrial Flutter: Chronic Anticoagulation Therapy ,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.
+",N,N,1,N/A,"Claims, Registry"
+327,,Pediatric Kidney Disease: Adequacy of Volume Management,Patient - Periodic,N/A,,N,N,1,N/A,Registry
+328,,Pediatric Kidney Disease: ESRD Patients Receiving Dialysis: Hemoglobin Level < 10g/dL,Patient - Periodic,N/A,,Y,N,1,N/A,Registry
+329,,Adult Kidney Disease: Catheter Use at Initiation of Hemodialysis,Patient - Process,N/A,No requirement exists to report both measures (329 and 330) when paired.  Any paired measure reported would count as an individual measure.  The system should not require that an eligible clinician report both of the paired measures. The system should consider each of these measures as an individually reportable measure.  An eligible clinician may report both or only one of the paired measures as part of the measures threshold required for data completeness. ,Y,N,1,N/A,Registry
+330,,Adult Kidney Disease: Catheter Use for Greater Than or Equal to 90 Days,Patient - Process,N/A,No requirement exists to report both measures (329 and 330) when paired.  Any paired measure reported would count as an individual measure.  The system should not require that an eligible clinician report both of the paired measures. The system should consider each of these measures as an individually reportable measure.  An eligible clinician may report both or only one of the paired measures as part of the measures threshold required for data completeness.,Y,N,1,N/A,Registry
+331,,Adult Sinusitis: Antibiotic Prescribed for Acute Sinusitis (Overuse),Episode,N/A,,Y,N,1,N/A,Registry
+332,,Adult Sinusitis: Appropriate Choice of Antibiotic: Amoxicillin With or Without Clavulanate Prescribed for Patients with Acute Bacterial Sinusitis (Appropriate Use),Patient - Process,N/A,,N,N,1,N/A,Registry
+333,,Adult Sinusitis: Computerized Tomography (CT) for Acute Sinusitis (Overuse),Episode,N/A,,Y,N,1,N/A,Registry
+334,,Adult Sinusitis: More than One Computerized Tomography (CT) Scan Within 90 Days for Chronic Sinusitis (Overuse),Visit,N/A,,Y,N,1,N/A,Registry
+335,,Maternity Care: Elective Delivery or Early Induction Without Medical Indication at ≥ 37 and < 39 Weeks,Procedure,N/A,,N,N,1,N/A,Registry
+336,,Maternity Care: Post-Partum Follow-Up and Care Coordination,Patient - Process,N/A,,N,N,1,N/A,Registry
+337,,"Tuberculosis Prevention for Psoriasis, Psoriatic Arthritis and Rheumatoid Arthritis Patients on a Biological Immune Response Modifier",Patient - Process,N/A,,N,N,1,N/A,Registry
+338, ,HIV Viral Load Suppression,Patient - Process,N/A, ,N,N,1,N/A,Registry
+340, ,HIV Medical Visit Frequency,Patient - Process,N/A,,N,N,1,N/A,Registry
+342,,Pain Brought Under Control within 48 Hours,Patient - Process,N/A,,N,N,1,N/A,Registry
+343,,Screening Colonoscopy Adenoma Detection Rate,Procedure,N/A,,N,N,1,N/A,Registry
+344,,"Rate of Carotid Artery Stenting (CAS) for Asymptomatic Patients, Without Major Complications (Discharged to Home by Post-Operative Day #2)",Procedure,N/A,,N,N,1,N/A,Registry
+345,,Rate of Postoperative Stroke or Death in Asymptomatic Patients Undergoing Carotid Artery Stenting (CAS),Procedure,N/A,,Y,N,1,N/A,Registry
+346,,Rate of Postoperative Stroke or Death in Asymptomatic Patients Undergoing Carotid Endarterectomy (CEA),Procedure,N/A,,Y,N,1,N/A,Registry
+347,,Rate of Endovascular Aneurysm Repair (EVAR) of Small or Moderate Non-Ruptured Abdominal Aortic Aneurysms (AAA) Who Die While in Hospital,Procedure,N/A,,Y,N,1,N/A,Registry
+348,,HRS-3: Implantable Cardioverter-Defibrillator (ICD) Complications Rate,Patient - Process,N/A,"An overall data completeness and performance rate needs to be calculated for this measure. A weighted average will be determined at the numerator and denominator count level. The overall data completeness is determined by summing the data completeness numerator counts of each submeasure and dividing by the sum of the data completeness denominator counts of each submeasure. The overall performance rate is determined by summing the performance numerator counts of each submeasure and dividing by the sum of the performance denominator counts of each submeasure.
+There are 2 performance rates to be calculated for this measure:
+1. Complications or mortality at 30 days
+OR
+2. Complications at 90 days                                                                           ",Y,N,2,Weighted Average,Registry
+350,,Total Knee Replacement: Shared Decision-Making: Trial of Conservative (Non-surgical) Therapy,Procedure,N/A,,N,N,1,N/A,Registry
+351,,Total Knee Replacement: Venous Thromboembolic and Cardiovascular Risk Evaluation ,Procedure,N/A, ,N,N,1,N/A,Registry
+352,,Total Knee Replacement: Preoperative Antibiotic Infusion with Proximal Tourniquet,Procedure,N/A, ,N,N,1,N/A,Registry
+353,,Total Knee Replacement: Identification of Implanted Prosthesis in Operative Report ,Procedure,N/A, ,N,N,1,N/A,Registry
+354,,Anastomotic Leak Intervention,Procedure,N/A,,Y,N,1,N/A,Registry
+355,,Unplanned Reoperation within the 30 Day Postoperative Period ,Procedure,N/A,,Y,N,1,N/A,Registry
+356, ,Unplanned Hospital Readmission within 30 Days of Principal Procedure,Procedure ,N/A,,Y,N,1,N/A,Registry
+357, ,Surgical Site Infection (SSI),Procedure ,N/A,,Y,N,1,N/A,Registry
+358,,Patient-Centered Surgical Risk Assessment and Communication,Procedure,N/A,,N,N,1,N/A,Registry
+359,,Optimizing Patient Exposure to Ionizing Radiation: Utilization of a Standardized Nomenclature for Computed Tomography (CT) Imaging Description,Procedure,N/A, ,N,N,1,N/A,Registry
+360,,Optimizing Patient Exposure to Ionizing Radiation: Count of Potential High Dose Radiation Imaging Studies: Computed Tomography (CT) and Cardiac Nuclear Medicine Studies ,Procedure,N/A,,N,N,1,N/A,Registry
+361,,Optimizing Patient Exposure to Ionizing Radiation: Reporting to a Radiation Dose Index Registry ,Procedure,N/A,,N,N,1,N/A,Registry
+362,,Optimizing Patient Exposure to Ionizing Radiation: Computed Tomography (CT) Images Available for Patient Follow-up and Comparison Purposes,Procedure,N/A, ,N,N,1,N/A,Registry
+363, ,"Optimizing Patient Exposure to Ionizing Radiation: Search for Prior Computed Tomography (CT) Studies Through a Secure, Authorized, Media-Free, Shared Archive ",Procedure,N/A,,N,N,1,N/A,Registry
+364,,Optimizing Patient Exposure to Ionizing Radiation: Appropriateness: Follow-up CT Imaging for Incidentally Detected Pulmonary Nodules According to Recommended Guidelines ,Procedure,N/A,,N,N,1,N/A,Registry
+366,CMS136v6,ADHD: Follow-Up Care for Children Prescribed Attention-Deficit/ Hyperactivity Disorder (ADHD) Medication,N/A,Patient-Based Measure,The eCQM measure requires the reporting of two performance rates (Intake & Continuation and Maintenance Phase). An overall performance rate needs to be calculated for this measure. A simple average of the performance rates will be determined to calculate the overall performance rate. This is determined by adding the performance rate percentages for each submeasure and divide by the total number of component submeasures. ,N,N,2,Simple Average,eHR 
+367,CMS169v5,Bipolar Disorder and Major Depression: Appraisal for alcohol or chemical substance use,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+369,CMS158v5,Pregnant women that had HBsAg testing,N/A,Patient-Based Measure,,N,N,1,N/A,eHR 
+370,CMS159v5,Depression Remission at Twelve Months,Patient - Process,Patient-Based Measure,,N,N,1,N/A,"Registry, eHR"
+371,CMS160v5,Depression Utilization of the PHQ-9 Tool,N/A,Patient-Based Measure,The eCQM measure requires the reporting of three performance rates. An overall performance rate needs to be calculated for this measure. A weighted average will be determined at the numerator and denominator count level. The overall performance rate is determined by summing the performance numerator counts of each submeasure and dividing by the sum of the performance denominator counts of each submeasure.,N,N,3,Weighted Average,eHR
+372,CMS82v4,Maternal depression screening,N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+373,CMS65v6,Hypertension: Improvement in Blood Pressure,N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+374,CMS50v5,Closing the Referral Loop: Receipt of Specialist Report,N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+375,CMS66v5,Functional Status Assessment for Knee Replacement,N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+376,CMS56v5,Functional Status Assessment for Hip Replacement,N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+377,CMS90v6,Functional Status Assessment for Complex Chronic Conditions,N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+378,CMS75v5,Children Who Have Dental Decay or Cavities,N/A,Patient-Based Measure,,Y,N,1,N/A,eHR
+379,CMS74v6,"Primary Caries Prevention Intervention as Offered by Primary Care Providers, including Dentists",N/A,Patient-Based Measure,,N,N,1,N/A,eHR
+382,CMS177v5,Child and Adolescent Major Depressive Disorder (MDD): Suicide Risk Assessment,N/A,Episode-of-Care Measure,,N,N,1,N/A,eHR
+383,,Adherence to Antipsychotic Medications For Individuals with Schizophrenia,Patient - Process,N/A,,N,Y,1,N/A,Registry
+384,,Adult Primary Rhegmatogenous Retinal Detachment Surgery: No Return to the Operating Room Within 90 Days of Surgery,Procedure,N/A,,N,N,1,N/A,Registry
+385,,Adult Primary Rhegmatogenous Retinal Detachment Surgery: Visual Acuity Improvement Within 90 Days of Surgery,Procedure,N/A,,N,N,1,N/A,Registry
+386,,Amyotrophic Lateral Sclerosis (ALS) Patient Care Preferences ,Patient - Process,N/A,,N,N,1,N/A,Registry
+387,,Annual Hepatitis C Virus (HCV) Screening for Patients who are Active Injection Drug Users ,Patient - Process,N/A,,N,Y,1,N/A,Registry
+388,,Cataract Surgery with Intra-Operative Complications (Unplanned Rupture of Posterior Capsule requiring unplanned vitrectomy) ,Procedure,N/A,,Y,N,1,N/A,Registry
+389,,Cataract Surgery: Difference Between Planned and Final Refraction ,Procedure,N/A,,N,N,1,N/A,Registry
+390,,Hepatitis C: Discussion and Shared Decision Making Surrounding Treatment Options,Patient - Process,N/A,,N,N,1,N/A,Registry
+391,,Follow-Up After Hospitalization for Mental Illness (FUH) ,Visit,N/A,"The measure has multiple denominator options. Acute inpatient setting discharges between January 1st and December 1st of the measurement period is one of the denominator criteria. This measure requires the reporting of two performance rates. The second performance rate (Percentage of discharges for which patient received follow-up within 7 days of discharge) defined in the measure will be utilized as the overall data completeness and performance rate for this measure.  
+
+This measure requires the reporting of two performance rates.
+(1) Percentage of discharges for which the patient received follow-up within 30 days of discharge.
+(2) Percentage of discharges for which the patient received follow-up within 7 days of discharge.",N,N,2,2nd Performance Rate,Registry
+392,,HRS-12: Cardiac Tamponade and/or Pericardiocentesis Following Atrial Fibrillation Ablation ,Patient - Process,N/A,"This measure has multiple denominator options. This measure requires the reporting of five performance rates but only one data completeness is required. The fifth performance rate outlined below should be utilized for an overall data completeness and performance rate for this measure.
+This measure requires the reporting of five performance rates.  
+1) Females less than 65 years of age
+2) Males less than 65 years of age
+3) Females 65 years of age and older
+4) Males 65 years of age and older
+5) Overall percentage of patients with cardiac tamponade and/or pericardiocentesis occurring within 30 days",Y,N,5,5th Performance Rate,Registry
+393,,"HRS-9: Infection within 180 Days of Cardiac Implantable Electronic Device (CIED) Implantation, Replacement, or Revision ",Patient - Process,N/A,"This measure requires the reporting of only one data completeness and performance rate. There are two reporting criteria for this measure:
+1) Patients, regardless of age, with a new CIED
+OR
+2) Patients, regardless of age, with a replaced or revised CIED
+",Y,N,1,N/A,Registry
+394,,Immunizations for Adolescents ,Patient - Process,N/A,"This measure requires the reporting of four performance rates. The third performance rate outlined below should be utilized for an overall data completeness and performance rate for this measure.
+This measure will be calculated with 4 performance rates:
+1)  Patients who had one dose of meningococcal vaccine on or between the patient’s 11th and 13th birthdays
+2)  Patients who had one tetanus, diphtheria toxoids and acellular pertussis vaccine (Tdap) or one tetanus, diphtheria toxoids vaccine (Td) on or between the patient’s 10th and 13th birthdays                                         
+3) Patients who had at least three HPV vaccines with different dates of service on or between the patient's 9th and 13th birthdays                        4) All patients who are compliant for both Meningococcal AND Td/Tdap AND HPV during the specified timeframes.",N,N,4,4th Performance Rate,Registry
+395,,Lung Cancer Reporting (Biopsy/Cytology Specimens) ,Procedure,N/A,"Claims: Only one QDC per date of service for a patient is required. 
+",N,N,1,N/A,"Claims, Registry"
+396,,Lung Cancer Reporting (Resection Specimens) ,Procedure,N/A,"Claims: Only one QDC per date of service for a patient is required. 
+",N,N,1,N/A,"Claims, Registry"
+397,,Melanoma Reporting ,Procedure,N/A,"Claims: Only one QDC per date of service for a patient is required. 
+",N,N,1,N/A,"Claims, Registry"
+398,,Optimal Asthma Control ,Patient - Process,N/A,"The measure has multiple denominator options. This measure requires the reporting of seven  performance rates. The first performance rate outlined below should be utilized for an overall data completeness and performance rate for this measure.
+
+This measure should be calculated with 7 performance rates:
+1. Overall Percentage for patients (aged 5-50 years) with well-controlled asthma, without elevated risk of exacerbation. 
+2. Percentage of pediatric patients (aged 5-17 years) with well-controlled asthma, without elevated risk of exacerbation. 
+3. Percentage of adult patients (aged 18-50 years) with well-controlled asthma, without elevated risk of exacerbation. 
+4. Asthma well-controlled (take the most recent ACT) for patients 5 to 17 with Asthma 
+5. Asthma well-controlled (take the most recent ACT) for patients 18 to 50 with Asthma 
+6. Patient not at elevated risk of exacerbation for patients 5 to 17 with Asthma 
+7. Patient not at elevated risk of exacerbation for patients 18 to 50 with Asthma ",N,N,7,1st Performance Rate,Registry
+400,,One-Time Screening for Hepatitis C Virus (HCV) for Patients at Risk,Patient - Process,N/A, ,N,Y,1,N/A,Registry
+401,,Hepatitis C: Screening for Hepatocellular Carcinoma (HCC) in Patients with Cirrhosis,Patient - Process,N/A,,N,N,1,N/A,Registry
+402,,Tobacco Use and Help with Quitting Among Adolescents ,Patient - Process,N/A,,N,N,1,N/A,Registry
+403,,Adult Kidney Disease: Referral to Hospice,Patient - Process,N/A,,N,N,1,N/A,Registry
+404,,Anesthesiology Smoking Abstinence,Procedure (Regardless of TIN/NPI),N/A,,N,N,1,N/A,Registry
+405,,Appropriate Follow-up Imaging for Incidental Abdominal Lesions,Procedure,N/A,,Y,N,1,N/A,"Claims, Registry"
+406,,Appropriate Follow-up Imaging for Incidental Thyroid Nodules in Patients,Procedure,N/A,,Y,N,1,N/A,"Claims, Registry"
+407,,Appropriate Treatment of MSSA Bacteremia,Episode (Regardless of TIN/NPI),N/A,"Claims: Utilize Part B Claims. Correlate eligible cases with inpatient ""hidden"" codes at the bene-level regardless of TIN/NPI to determine the length of hospital stay (episode). ""Hidden"" inpatient code line items that are denied or include modifier 80, 81 or 82 should be included in this analysis.  
+•REFER TO THE ""HIDDEN CODES"" TAB OF THE SINGLE SOURCE FOR A COMPLETE LISTING OF CPT I INPATIENT ""HIDDEN"" CODES                                                                           • Inpatient ""hidden"" CPT I codes are counted once per hospital stay 
+• Multiple ICD10 codes on the same claim are counted once
+• Maximum one episode per claim (even if there is a break in DOS for inpatient ""hidden"" CPT I codes on that claim)
+• Count any inpatient ""hidden"" CPT I in a string of consecutive DOS at bene level for all TIN/NPI as one episode 
+• Look across claims to determine the episode based on ""consecutive dates of service,"" use the earliest DOS for an inpatient ""hidden"" CPT I code and the latest DOS for an inpatient ""hidden"" CPT I code on each claim to identify claims with consecutive DOS.
+• Most favorable instance of reporting is used in performance rate",N,N,1,N/A,"Claims, Registry"
+408,,Opioid Therapy Follow-up Evaluation,Patient - Process,N/A,,N,N,1,N/A,Registry
+409,,Clinical Outcome Post Endovascular Stroke Treatment,Procedure,N/A,,N,N,1,N/A,Registry
+410,,Psoriasis: Clinical Response to Oral Systemic or Biologic Medications,Patient - Process,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.",N,N,1,N/A,"Claims, Registry"
+411,,Depression Remission at Six Months,Patient - Process,N/A,,N,N,1,N/A,Registry
+412,,Documentation of Signed Opioid Treatment Agreement,Patient - Process,N/A,,N,N,1,N/A,Registry
+413,,Door to Puncture Time for Endovascular Stroke Treatment,Procedure,N/A,,N,N,1,N/A,Registry
+414,,Evaluation or Interview for Risk of Opioid Misuse,Patient - Process,N/A,,N,N,1,N/A,Registry
+415,,Emergency Medicine: Emergency Department Utilization of CT for Minor Blunt Head Trauma for Patients Aged 18 Years and Older,Visit,N/A,"Claims: The patient should have CPT 70450 (regardless of TIN/NPI) on the same date of service as the denominator eligible encounter in order to be included in the denominator. 
+",N,N,1,N/A,"Claims, Registry"
+416,,Emergency Medicine: Emergency Department Utilization of CT for Minor Blunt Head Trauma for Patients Aged 2 through 17 Years ,Visit,N/A,"Claims: The patient should have CPT 70450 (regardless of TIN/NPI) on the same date of service as the denominator eligible encounter in order to be included in the denominator. 
+",Y,N,1,N/A,"Claims, Registry"
+417,,Rate of Open Repair of Abdominal Aortic Aneurysms (AAA) Where Patients Are Discharged Alive,Procedure,N/A,,N,N,1,N/A,Registry
+418,,Osteoporosis Management in Women Who Had a Fracture,Episode (TIN/NPI/Bene-level),N/A,"Claims: Count each unique diagnosis as an episode for an TIN/NPI/Bene unless multiple diagnoses appear on the same claim.      
+• Multiple qualifying ICD10 or CPT I procedures on a single claim are counted once. (A single claim can be counted a maximum of once for an episode per TIN/NPI/Bene combo regardless of the number of qualifying DXs or procedures that exist.)
+• Multiple claims with any intersecting diagnosis will be counted once. Intersecting claims with diagnosis codes will be counted once. All claims that share diagnosis codes are combined into one episode, given they have the same TIN/NPI/Bene                                                                                                                                                                               • If the TIN/NPI/Bene combo has multiple claims containing *different* qualifying DX codes that have not been submitted during the performance period, then these claims may each count as additional episodes.
+• Use the most favorable instance of reporting for performance rates if multiple conflicting QDCs exist on a qualifying episode.
+• The QDC must exist on the claim with the qualifying denom episode (overarching rule for all measures).
+",N,N,1,N/A,"Claims, Registry"
+419,,Overuse Of Neuroimaging For Patients With Primary Headache And A Normal Neurological Examination ,Visit,N/A,"Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.
+",N,N,1,N/A,"Claims, Registry"
+420,,Varicose Vein Treatment with Saphenous Ablation: Outcome Survey,Procedure,N/A,,N,N,1,N/A,Registry
+421,,Appropriate Assessment of Retrievable Inferior Vena Cava Filters for Removal,Procedure,N/A,,N,N,1,N/A,Registry
+422,,Performing Cystoscopy at the Time of Hysterectomy for Pelvic Organ Prolapse to Detect Lower Urinary Tract Injury,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+423,,Perioperative Anti-platelet Therapy for Patients undergoing Carotid Endarterectomy,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+424,,Perioperative Temperature Management,Procedure,N/A,,N,N,1,N/A,Registry
+425,,Photodocumentation of Cecal Intubation,Procedure,N/A,"Denominator eligible CPT codes submitted with a modifier 73 and 74 should be excluded from the denominator for claims or excluded by the registry.  If QDCs are submitted on the same claim for multiple measures, exclude only the line item with the modifier.
+",N,N,1,N/A,"Claims, Registry"
+426,,Post-Anesthetic Transfer of Care Measure: Procedure Room to a Post Anesthesia Care Unit (PACU),Procedure,N/A,,N,N,1,N/A,Registry
+427,,Post-Anesthetic Transfer of Care: Use of Checklist or Protocol for Direct Transfer of Care from Procedure Room to Intensive Care Unit (ICU),Procedure,N/A,,N,N,1,N/A,Registry
+428,,Pelvic Organ Prolapse: Preoperative Assessment of Occult Stress Urinary Incontinence,Procedure,N/A,,N,N,1,N/A,Registry
+429,,Pelvic Organ Prolapse: Preoperative Screening for Uterine Malignancy,Procedure,N/A,,N,N,1,N/A,"Claims, Registry"
+430,,Prevention of Post-Operative Nausea and Vomiting (PONV) – Combination Therapy,Procedure,N/A,,N,N,1,N/A,Registry
+431,,Preventive Care and Screening: Unhealthy Alcohol Use: Screening & Brief Counseling,Patient - Process,N/A,,N,Y,1,N/A,Registry
+432,,Proportion of Patients Sustaining a Bladder Injury at the Time of any Pelvic Organ Prolapse Repair,Procedure,N/A,,Y,N,1,N/A,Registry
+433,,Proportion of Patients Sustaining a Major Viscus Injury at the time of any Pelvic Organ Prolapse Repair,Procedure,N/A,,Y,N,1,N/A,Registry
+434,,Proportion of Patients Sustaining a Ureter Injury at the Time of any Pelvic Organ Prolapse Repair,Procedure,N/A,,Y,N,1,N/A,Registry
+435,,Quality of Life Assessment For Patients With Primary Headache Disorders ,Patient - Process,N/A,"Claims: Two denominator eligible visits for the same TIN/NPI with two different dates of service are required to be denominator eligible. The QDC needs to be reported on the 2nd visit (based on date of service) or a subsequent visit if more than two visits are found within the reporting period. A QDC submitted on the first visit (based on date of service) in the reporting period will not be counted. The most advantageous QDC should be utilized if multiple QDCs are submitted on any visit but the first visit within the reporting period.                                                                          For the numerator, quality of life assessments with MIDAS must be separated by at least 90 days (4 weeks for any other tool).  
+Encounter codes with Telehealth modifiers GQ, GT would not  be considered denominator eligible encounters.
+",N,N,1,N/A,"Claims, Registry"
+436,,Radiation Consideration for Adult CT: Utilization of Dose Lowering Techniques,Procedure,N/A,,N,Y,1,N/A,"Claims, Registry"
+437,,Rate of Surgical Conversion from Lower Extremity Endovascular Revascularization Procedure,Procedure,N/A,"Include only patients undergoing an endovascular lower extremity revascularization procedure through December 29 of the reporting period. This will allow the evaluation of at least 48 hours of the procedure within the reporting year.
+",Y,N,1,N/A,"Claims, Registry"
+438,,Statin Therapy for the Prevention and Treatment of Cardiovascular Disease,Patient - Process,N/A,"The measure has multiple reporting criteria. This measure requires the reporting of only one reporting and performance rate.  All considered at high risk of cardiovascular events—who were prescribed or were on statin therapy during the measurement period: 
+1. Adults aged ≥ 21 years who were previously diagnosed with or currently have an active diagnosis of clinical atherosclerotic cardiovascular disease (ASCVD); OR 
+2. Adults aged ≥21 years with a fasting or direct low-density lipoprotein cholesterol (LDL-C) level ≥ 190 mg/dL; OR 
+3. Adults aged 40-75 years with a diagnosis of diabetes with a fasting or direct LDL-C level of 70-189 mg/dL 
+",N,N,1,N/A,Registry
+439,,Age Appropriate Screening Colonoscopy,Procedure,N/A,,Y,N,1,N/A,Registry
+440,,Basal Cell Carcinoma (BCC)/Squamous Cell Carcinoma: Biopsy Reporting Time – Pathologist to Clinician ,Procedure,N/A,,N,N,1,N/A,Registry
+441,,Ischemic Vascular Disease (IVD) All or None Outcome Measure (Optimal Control),Patient - Intermediate,N/A,,N,N,1,N/A,Registry
+442,,Persistence of Beta-Blocker Treatment After a Heart Attack,Patient - Process,N/A, ,N,N,1,N/A,Registry
+443,,Non-Recommended Cervical Cancer Screening in Adolescent Females,Patient - Process,N/A,,Y,N,1,N/A,Registry
+444,,Medication Management for People with Asthma,Patient - Process,N/A,,N,N,1,N/A,Registry
+445,,Risk-Adjusted Operative Mortality for Coronary Artery Bypass Graft (CABG),Patient - Process,N/A, ,Y,N,1,N/A,Registry
+446,,Operative Mortality Stratified by the Five STS-EACTS Mortality Categories ,Procedure,N/A,,Y,N,1,N/A,Registry
+447,,Chlamydia Screening and Follow Up ,Patient - Process,N/A,,N,N,1,N/A,Registry
+448,,Appropriate Workup Prior to Endometrial Ablation ,Procedure,N/A,,N,N,1,N/A,Registry
+449,,HER2 Negative or Undocumented Breast Cancer Patients Spared Treatment with HER2-Targeted Therapies,Patient - Process,N/A,,N,N,1,N/A,Registry
+450,,Trastuzumab Received By Patients With AJCC Stage I (T1c) – III And HER2 Positive Breast Cancer Receiving Adjuvant Chemotherapy ,Patient - Process,N/A,,N,N,1,N/A,Registry
+451,,KRAS Gene Mutation Testing Performed for Patients with Metastatic Colorectal Cancer who receive Anti-epidermal Growth Factor Receptor (EGFR) Monoclonal Antibody Therapy,Patient - Process,N/A,,N,N,1,N/A,Registry
+452,,Patients with Metastatic Colorectal Cancer and KRAS Gene Mutation Spared Treatment with Anti-epidermal Growth Factor Receptor (EGFR) Monoclonal Antibodies ,Patient - Process,N/A,,N,N,1,N/A,Registry
+453,,Proportion Receiving Chemotherapy in the Last 14 Days of Life,Patient - Process,N/A,,Y,N,1,N/A,Registry
+454,,Proportion of Patients who Died from Cancer with more than One Emergency Department Visit in the Last 30 Days of Life,Patient - Process,N/A,,Y,N,1,N/A,Registry
+455,,Proportion Admitted to the Intensive Care Unit (ICU) in the Last 30 Days of Life,Patient - Process,N/A,,Y,N,1,N/A,Registry
+456,,Proportion Not Admitted To Hospice,Patient - Process,N/A,,Y,N,1,N/A,Registry
+457,,Proportion Admitted to Hospice for less than 3 days,Patient - Process,N/A,,Y,N,1,N/A,Registry
