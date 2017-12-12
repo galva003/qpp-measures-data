@@ -120,26 +120,25 @@ function mergeMeasures(existingMeasures, updatedMeasures) {
       // Second case: The overall algorithm is identified as an ordinal of the performance rates
   
       // Determine the position of the overall algorithm's performance rate, indexed starting starting from 1.
-      const stratumPostionMatch = updatedMeasure.overallAlgorithm
+      const stratumPositionMatch = updatedMeasure.overallAlgorithm
         .match(/([0-9]{1,})(st|nd|rd|th) Performance Rate/);
 
       // If it's not a performance rate ordinal and it's not 'N/A' it's special somehow...
-      if (!stratumPostionMatch && (updatedMeasure.overallAlgorithm !== 'N/A')) {
+      if (!stratumPositionMatch && (updatedMeasure.overallAlgorithm !== 'N/A')) {
         const explanation = 'Found unexpected overallAlgorithm: ' + updatedMeasure.overallAlgorithm + '\n';
         resultsString += updatedMeasure.measureId + ',' + explanation;
         return;
-      } else {
-        if (existingMeasure.overallAlgorithm !== undefined) {
-          const explanation = 'existing measures overallAlgorithm is ' + existingMeasure.overallAlgorithm + ', should be N/A\n';
-          resultsString += updatedMeasure.measureId + ',' + explanation;
-        }
+      // If it's not a performance rate ordinal and new value is 'N/A' an
+      // existing overallalgorithm is undefined, nothing to do here.
+      } else if (!stratumPositionMatch && (updatedMeasure.overallAlgorithm === 'N/A') && (existingMeasure.overallAlgorithm === undefined)) {
         return;
       }
 
-      if (stratumPostionMatch) {
-        const stratumPostion = stratumPostionMatch[1];
+      // The overall performance rate is one of the strata
+      if (stratumPositionMatch) {
+        const stratumPostion = stratumPositionMatch[1];
 
-        // If it's a performance rate ordinal, check it has a strata array
+        // Check the existing measure has a strata array
         if (!Array.isArray(existingMeasure.strata)) {
           const explanation = 'Updated measure specifies overall performance rate should be ' + updatedMeasure.overallAlgorithm +
              ' but existing measure: ' + existingMeasure.measureId + ' has no strata (' + existingMeasure.metricType + ').';
