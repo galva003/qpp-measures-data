@@ -103,7 +103,6 @@ function mergeMeasures(existingMeasures, updatedMeasures) {
     if (!existingMeasure) {
       const explanation = 'measure doesn\'t exist in measures-data';
       resultsString += updatedMeasure.measureId + ',' + explanation + '\n';
-      console.log(idx);
       return;
     };
 
@@ -126,7 +125,15 @@ function mergeMeasures(existingMeasures, updatedMeasures) {
 
       // If it's not a performance rate ordinal and it's not 'N/A' it's special somehow...
       if (!stratumPostionMatch && (updatedMeasure.overallAlgorithm !== 'N/A')) {
-        resultsString += 'Found unexpected overallAlgorithm: ' + updatedMeasure.overallAlgorithm;
+        const explanation = 'Found unexpected overallAlgorithm: ' + updatedMeasure.overallAlgorithm + '\n';
+        resultsString += updatedMeasure.measureId + ',' + explanation;
+        return;
+      } else {
+        if (existingMeasure.overallAlgorithm !== undefined) {
+          const explanation = 'existing measures overallAlgorithm is ' + existingMeasure.overallAlgorithm + ', should be N/A\n';
+          resultsString += updatedMeasure.measureId + ',' + explanation;
+        }
+        return;
       }
 
       if (stratumPostionMatch) {
