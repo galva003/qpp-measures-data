@@ -789,7 +789,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0105",
     "measureId": "009",
-    "description": "Percentage of patients 18 years of age and older who were treated with antidepressant medication, had a diagnosis of major depression, and who remained on an antidepressant medication treatment. Two rates are reported:\r\ra Percentage of patients who remained on an antidepressant medication for at least 84 days (12 weeks)\r\rb Percentage of patients who remained on an antidepressant medication for at least 180 days (6 months)",
+    "description": "Percentage of patients 18 years of age and older who were treated with antidepressant medication, had a diagnosis of major depression, and who remained on an antidepressant medication treatment. Two rates are reported:\r\na Percentage of patients who remained on an antidepressant medication for at least 84 days (12 weeks)\r\nb Percentage of patients who remained on an antidepressant medication for at least 180 days (6 months)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -2195,7 +2195,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": true,
@@ -14530,7 +14530,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0097",
     "measureId": "046",
-    "description": "The percentage of discharges from any inpatient facility (e.g. hospital, skilled nursing facility, or rehabilitation facility) for patients 18 years and older of age seen within 30 days following discharge in the office by the physician, prescribing practitioner, registered nurse, or clinical pharmacist providing on-going care for whom the discharge medication list was reconciled with the current medication list in the outpatient medical record.\r\rThis measure is reported as three rates stratified by age group: Submission Criteria 1: 18-64 years of age; Submission Criteria 2: 65 years and older; Total Rate: All patients 18 years of age and older",
+    "description": "The percentage of discharges from any inpatient facility (e.g. hospital, skilled nursing facility, or rehabilitation facility) for patients 18 years and older of age seen within 30 days following discharge in the office by the physician, prescribing practitioner, registered nurse, or clinical pharmacist providing on-going care for whom the discharge medication list was reconciled with the current medication list in the outpatient medical record.\r\nThis measure is reported as three rates stratified by age group:\r\n- Submission Criteria 1: 18-64 years of age\r\n- Submission Criteria 2: 65 years and older\r\n- Total Rate: All patients 18 years of age and older",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -16119,7 +16119,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -16430,7 +16430,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -17413,7 +17413,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -19576,7 +19576,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0421",
     "measureId": "128",
-    "description": "Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous twelve months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous twelve months of the current encounter\r\r\r\rNormal Parameters:\r\r\r\rAge 18 years and older BMI >= 18.5 and < 25 kg/m2",
+    "description": "Percentage of patients aged 18 years and older with a BMI documented during the current encounter or during the previous twelve months AND with a BMI outside of normal parameters, a follow-up plan is documented during the encounter or during the previous twelve months of the current encounter\r\n\r\nNormal Parameters:\r\n\r\nAge 18 years and older BMI >= 18.5 and < 25 kg/m2",
     "nationalQualityStrategyDomain": "Community/Population Health",
     "measureType": "process",
     "primarySteward": "Centers for Medicare & Medicaid Services",
@@ -19618,7 +19618,7 @@
       "registry": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_128_Registry.pdf",
       "claims": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_128_Claims.pdf",
       "cmsWebInterface": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Web-Interface-Measures/2018_WI_PREV9.pdf",
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms069v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms069v6"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-1abd1d0427de",
     "strata": [
@@ -20109,7 +20109,7 @@
     "measureSpecification": {
       "registry": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_130_Registry.pdf",
       "claims": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_130_Claims.pdf",
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms068v7"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms068v7"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-1afe205e2890",
     "strata": [
@@ -20922,7 +20922,7 @@
       "registry": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_134_Registry.pdf",
       "claims": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_134_Claims.pdf",
       "cmsWebInterface": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Web-Interface-Measures/2018_WI_PREV12.pdf",
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms002v7"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms002v7"
     },
     "cpcPlusGroup": "Other_Measure",
     "eMeasureUuid": "40280382-5b4d-eebc-015b-5844953b00a3",
@@ -21195,7 +21195,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0650",
     "measureId": "137",
-    "description": "Percentage of patients, regardless of age, with a current diagnosis of melanoma or a history of melanoma whose information was entered, at least once within a 12 month period, into a recall system that includes: a target date for the next complete physical skin exam, AND a process to follow up with patients who either did not make an appointment within the specified timeframe or who missed a scheduled appointment",
+    "description": "Percentage of patients, regardless of age, with a current diagnosis of melanoma or a history of melanoma whose information was entered, at least once within a 12 month period, into a recall system that includes:\r\n- A target date for the next complete physical skin exam, AND\r\n- A process to follow up with patients who either did not make an appointment within the specified timeframe or who missed a scheduled appointment",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
     "measureType": "structure",
     "primarySteward": "American Academy of Dermatology",
@@ -22060,7 +22060,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -23732,7 +23732,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -23953,7 +23953,7 @@
       "pediatrics"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms052v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms052v6"
     },
     "strata": [
       {
@@ -24963,7 +24963,7 @@
     ]
   },
   {
-    "title": "Colonoscopy Interval for Patients with a History of Adenomatous Polyps\r\r- Avoidance of Inappropriate Use",
+    "title": "Colonoscopy Interval for Patients with a History of Adenomatous Polyps\r\n- Avoidance of Inappropriate Use",
     "eMeasureId": null,
     "nqfEMeasureId": null,
     "nqfId": "0659",
@@ -24975,7 +24975,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -25391,7 +25391,7 @@
     ]
   },
   {
-    "title": "Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antithrombotic",
+    "title": "Ischemic Vascular Disease (IVD): Use of Aspirin or Another Antiplatelet",
     "eMeasureId": "CMS164v6",
     "nqfEMeasureId": null,
     "nqfId": "0068",
@@ -26334,7 +26334,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": true,
     "isToppedOutByProgram": true,
@@ -27914,7 +27914,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0022",
     "measureId": "238",
-    "description": "Percentage of patients 65 years of age and older who were ordered high-risk medications. Two rates are submitted.\r\r1) Percentage of patients who were ordered at least one high-risk medication.\r\r2) Percentage of patients who were ordered at least two of the same high-risk medication",
+    "description": "Percentage of patients 65 years of age and older who were ordered high-risk medications. Two rates are submitted.\r\n1) Percentage of patients who were ordered at least one high-risk medication.\r\n2) Percentage of patients who were ordered at least two of the same high-risk medication",
     "nationalQualityStrategyDomain": "Patient Safety",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -27975,7 +27975,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0024",
     "measureId": "239",
-    "description": "Percentage of patients 3-17 years of age who had an outpatient visit with a Primary Care Physician (PCP) or Obstetrician/Gynecologist (OB/GYN) and who had evidence of the following during the measurement period. Three rates are reported.\r\r\r\r - Percentage of patients with height, weight, and body mass  index (BMI) percentile documentation\r\r - Percentage of patients with counseling for nutrition\r\r - Percentage of patients with counseling for physical activity",
+    "description": "Percentage of patients 3-17 years of age who had an outpatient visit with a Primary Care Physician (PCP) or Obstetrician/Gynecologist (OB/GYN) and who had evidence of the following during the measurement period. Three rates are reported.\r\n\r\n - Percentage of patients with height, weight, and body mass  index (BMI) percentile documentation\r\n - Percentage of patients with counseling for nutrition\r\n - Percentage of patients with counseling for physical activity",
     "nationalQualityStrategyDomain": "Community/Population Health",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -28336,7 +28336,7 @@
     "measureId": "251",
     "description": "This is a measure based on whether quantitative evaluation of Human Epidermal Growth Factor Receptor 2 Testing (HER2) by immunohistochemistry (IHC) uses the system recommended in the current ASCO/CAP Guidelines for Human Epidermal Growth Factor Receptor 2 Testing in breast cancer",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
-    "measureType": "structure",
+    "measureType": "process",
     "primarySteward": "College of American Pathologists",
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
@@ -29910,7 +29910,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0004",
     "measureId": "305",
-    "description": "Percentage of patients 13 years of age and older with a new episode of alcohol and other drug (AOD) dependence who received the following. Two rates are reported.\r\ra. Percentage of patients who initiated treatment within 14 days of the diagnosis\r\rb. Percentage of patients who initiated treatment and who had two or more additional services with an AOD diagnosis within 30 days of the initiation visit",
+    "description": "Percentage of patients 13 years of age and older with a new episode of alcohol and other drug (AOD) dependence who received the following. Two rates are reported.\r\na. Percentage of patients who initiated treatment within 14 days of the diagnosis\r\nb. Percentage of patients who initiated treatment and who had two or more additional services with an AOD diagnosis within 30 days of the initiation visit",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -29976,7 +29976,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0032",
     "measureId": "309",
-    "description": "Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria:\r\r*  Women age 21-64 who had cervical cytology performed every 3 years\r\r*  Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years",
+    "description": "Percentage of women 21-64 years of age who were screened for cervical cancer using either of the following criteria:\r\n-  Women age 21-64 who had cervical cytology performed every 3 years\r\n-  Women age 30-64 who had cervical cytology/human papillomavirus (HPV) co-testing performed every 5 years",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -30116,7 +30116,7 @@
     "measureSpecification": {
       "registry": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_317_Registry.pdf",
       "claims": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_317_Claims.pdf",
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms022v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms022v6"
     },
     "eMeasureUuid": "40280382-5971-4eed-015a-4e17610e4ba1",
     "strata": [
@@ -30543,7 +30543,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -30654,7 +30654,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0005 & 0006",
     "measureId": "321",
-    "description": "Getting timely care, appointments, and information; How well providers Communicate; Patient's Rating of Provider; Access to Specialists; Health Promotion & Education; Shared Decision Making; Health Status/Functional Status; Courteous and Helpful Office Staff; Care Coordination; and Stewardship of Patient Resources",
+    "description": "- Getting timely care, appointments, and information;\r\n- How well providers Communicate;\r\n- Patient's Rating of Provider;\r\n- Access to Specialists;\r\n- Health Promotion & Education;\r\n- Shared Decision Making;\r\n- Health Status/Functional Status;\r\n- Courteous and Helpful Office Staff;\r\n- Care Coordination; and\r\n- Stewardship of Patient Resources",
     "nationalQualityStrategyDomain": "Person and Caregiver-Centered Experience and Outcomes",
     "measureType": "patientEngagementExperience",
     "primarySteward": "Agency for Healthcare Research & Quality",
@@ -30690,7 +30690,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -30720,7 +30720,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -30750,7 +30750,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -31147,7 +31147,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": true,
+    "isHighPriority": false,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -31235,7 +31235,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -31299,7 +31299,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -31333,7 +31333,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -31367,7 +31367,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -31393,14 +31393,14 @@
     "nqfEMeasureId": null,
     "nqfId": null,
     "measureId": "335",
-    "description": "Percentage of patients, regardless of age, who gave birth during a 12-month period who delivered a live singleton at\r\r>= 37 and < 39 weeks of gestation completed who had elective deliveries or early inductions without medical indication",
+    "description": "Percentage of patients, regardless of age, who gave birth during a 12-month period who delivered a live singleton at\r\n>= 37 and < 39 weeks of gestation completed who had elective deliveries or early inductions without medical indication",
     "nationalQualityStrategyDomain": "Patient Safety",
     "measureType": "outcome",
     "primarySteward": "Centers for Medicare & Medicaid Services",
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -32088,7 +32088,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -32208,7 +32208,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -32231,7 +32231,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0108",
     "measureId": "366",
-    "description": "Percentage of children 6-12 years of age and newly dispensed a medication for attention-deficit/hyperactivity disorder (ADHD) who had appropriate follow-up care.  Two rates are reported.\r\ra. Percentage of children who had one follow-up visit with a practitioner with prescribing authority during the 30-Day Initiation Phase\r\rb. Percentage of children who remained on ADHD medication for at least 210 days and who, in addition to the visit in the Initiation Phase, had at least two additional follow-up visits with a practitioner within 270 days (9 months) after the Initiation Phase ended",
+    "description": "Percentage of children 6-12 years of age and newly dispensed a medication for attention-deficit/hyperactivity disorder (ADHD) who had appropriate follow-up care.  Two rates are reported.\r\na. Percentage of children who had one follow-up visit with a practitioner with prescribing authority during the 30-Day Initiation Phase\r\nb. Percentage of children who remained on ADHD medication for at least 210 days and who, in addition to the visit in the Initiation Phase, had at least two additional follow-up visits with a practitioner within 270 days (9 months) after the Initiation Phase ended",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -32508,7 +32508,7 @@
     ],
     "measureSets": [],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms082v5"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms082v5"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-49b2128438cb",
     "strata": [
@@ -32552,7 +32552,7 @@
       "internalMedicine"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms065v7"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms065v7"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-44ab0b8a3591",
     "strata": [
@@ -32616,7 +32616,7 @@
     ],
     "measureSpecification": {
       "registry": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Claims-Registry-Measures/2018_Measure_374_Registry.pdf",
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms050v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms050v6"
     },
     "cpcPlusGroup": "Other_Measure",
     "eMeasureUuid": "40280382-5971-4eed-015a-5c465a344ded",
@@ -32659,7 +32659,7 @@
       "orthopedicSurgery"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms066v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms066v6"
     },
     "eMeasureUuid": "40280382-5b4d-eebc-015b-5e9d6d0c0294",
     "strata": [
@@ -32702,7 +32702,7 @@
       "orthopedicSurgery"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms056v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms056v6"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-49498b373799",
     "strata": [
@@ -32746,7 +32746,7 @@
       "internalMedicine"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms090v7"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms090v7"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-4434ffa43547",
     "strata": [
@@ -32789,7 +32789,7 @@
       "dentistry"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms075v6"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms075v6"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-44cef87e35c3",
     "strata": [
@@ -32833,7 +32833,7 @@
       "dentistry"
     ],
     "measureSpecification": {
-      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms074v7"
+      "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/ep/2018/cms074v7"
     },
     "eMeasureUuid": "40280382-5abd-fa46-015b-48fd374e3757",
     "strata": [
@@ -33147,7 +33147,7 @@
     "nqfEMeasureId": null,
     "nqfId": "0576",
     "measureId": "391",
-    "description": "The percentage of discharges for patients 6 years of age and older who were hospitalized for treatment of selected mental illness diagnoses and who had a follow-up visit with a mental health practitioner. Two rates are submitted: The percentage of discharges for which the patient received follow-up within 30 days of discharge. The percentage of discharges for which the patient received follow-up within 7 days of discharge.",
+    "description": "The percentage of discharges for patients 6 years of age and older who were hospitalized for treatment of selected mental illness diagnoses and who had a follow-up visit with a mental health practitioner. Two rates are submitted:\r\n- The percentage of discharges for which the patient received follow-up within 30 days of discharge.\r\n- The percentage of discharges for which the patient received follow-up within 7 days of discharge.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
     "measureType": "process",
     "primarySteward": "National Committee for Quality Assurance",
@@ -33189,7 +33189,7 @@
     "nqfEMeasureId": null,
     "nqfId": "2474",
     "measureId": "392",
-    "description": "Rate of cardiac tamponade and/or pericardiocentesis following atrial fibrillation ablation This measure is submitted as four rates stratified by age and gender: Submission Age Criteria 1: Females 18-64 years of age; Submission Age Criteria 2: Males 18-64 years of age; Submission Age Criteria 3: Females 65 years of age and older; Submission Age Criteria 4: Males 65 years of age and older",
+    "description": "Rate of cardiac tamponade and/or pericardiocentesis following atrial fibrillation ablation This measure is submitted as four rates stratified by age and gender:\r\n- Submission Age Criteria 1: Females 18-64 years of age\r\n- Submission Age Criteria 2: Males 18-64 years of age\r\n- Submission Age Criteria 3: Females 65 years of age and older\r\n- Submission Age Criteria 4: Males 65 years of age and older",
     "nationalQualityStrategyDomain": "Patient Safety",
     "measureType": "outcome",
     "primarySteward": "The Heart Rhythm Society",
@@ -33858,7 +33858,7 @@
     "nqfEMeasureId": null,
     "nqfId": null,
     "measureId": "405",
-    "description": "Percentage of final reports for abdominal imaging studies for asymptomatic patients aged 18 years and older with one or more of the following noted incidentally with follow_up imaging recommended: Liver lesion =< 0.5 cm; Cystic kidney lesion < 1.0 cm; Adrenal lesion =< 1.0 cm",
+    "description": "Percentage of final reports for abdominal imaging studies for asymptomatic patients aged 18 years and older with one or more of the following noted incidentally with follow_up imaging recommended:\r\n- Liver lesion =< 0.5 cm\r\n- Cystic kidney lesion < 1.0 cm\r\n- Adrenal lesion =< 1.0 cm",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "American College of Radiology",
@@ -34128,7 +34128,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -34724,7 +34724,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -42185,7 +42185,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -42548,7 +42548,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -43669,7 +43669,7 @@
     "nqfEMeasureId": null,
     "nqfId": null,
     "measureId": "436",
-    "description": "Percentage of final reports for patients aged 18 years and older undergoing CT with documentation that one or more of the following dose reduction techniques were used: Automated exposure control; Adjustment of the mA and/or kV according to patient size; Use of iterative reconstruction technique",
+    "description": "Percentage of final reports for patients aged 18 years and older undergoing CT with documentation that one or more of the following dose reduction techniques were used:\r\n- Automated exposure control\r\n- Adjustment of the mA and/or kV according to patient size\r\n- Use of iterative reconstruction technique",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "American College of Radiology",
@@ -44013,7 +44013,7 @@
     "nqfEMeasureId": null,
     "nqfId": null,
     "measureId": "438",
-    "description": "Percentage of the following patients - all considered at high risk of cardiovascular events - who were prescribed or were on statin therapy during the measurement period: Adults aged >= 21 years who were previously diagnosed with or currently have an active diagnosis of clinical atherosclerotic cardiovascular disease (ASCVD); OR Adults aged >=21 years who have ever had  a fasting or direct low-density lipoprotein cholesterol (LDL-C) level >= 190 mg/dL; OR Adults aged 40-75 years with a diagnosis of diabetes with a fasting or direct LDL-C level of 70-189 mg/dL",
+    "description": "Percentage of the following patients - all considered at high risk of cardiovascular events - who were prescribed or were on statin therapy during the measurement period:\r\n- Adults aged >= 21 years who were previously diagnosed with or currently have an active diagnosis of clinical atherosclerotic cardiovascular disease (ASCVD); OR\r\n- Adults aged >=21 years who have ever had  a fasting or direct low-density lipoprotein cholesterol (LDL-C) level >= 190 mg/dL; OR\r\n- Adults aged 40-75 years with a diagnosis of diabetes with a fasting or direct LDL-C level of 70-189 mg/dL",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "process",
     "primarySteward": "Centers for Medicare & Medicaid Services",
@@ -44044,7 +44044,42 @@
       "electronicHealthRecord": "https://ecqi.healthit.gov/ecqm/measures/cms347v1"
     },
     "cpcPlusGroup": "Other_Measure",
-    "eMeasureUuid": "40280382-5b4d-eebc-015b-8245e0fa06b7"
+    "eMeasureUuid": "40280382-5b4d-eebc-015b-8245e0fa06b7",
+    "strata": [
+      {
+        "name": "clinicalASCVD",
+        "description": "Patients aged ≥ 21 years at the beginning of the measurement period with clinical ASCVD diagnosis",
+        "eMeasureUuids": {
+          "initialPopulationUuid": "B5249FB8-86D2-4633-BCF8-705EAAA35F04",
+          "denominatorUuid": "CC35FC48-FA75-4E8C-8949-BC2B4D152F72",
+          "numeratorUuid": "53656F0F-97C7-4537-907E-4C8D836A5853",
+          "denominatorExclusionUuid": "6C1F017F-F0C4-4346-B823-0BC24E3BFA9C",
+          "denominatorExceptionUuid": "F13A488B-6F7F-45E3-8216-1A7A679ADBFD"
+        }
+      },
+      {
+        "name": ">21Familial",
+        "description": "Patients aged ≥ 21 years at the beginning of the measurement period who have ever had a fasting or direct laboratory result of LDL-C ≥ 190 mg/dL or were previously diagnosed with or currently have an active diagnosis of familial or pure hypercholesterolemia",
+        "eMeasureUuids": {
+          "initialPopulationUuid": "F1948A70-E9EE-427F-9D1F-9489B902DFAB",
+          "denominatorUuid": "C44EA250-22FE-4FF1-835B-BD718A9E71FA",
+          "numeratorUuid": "632ECBD0-8C77-40E9-AE21-795891D5CD64",
+          "denominatorExclusionUuid": "C5AA9EF4-FC68-4844-A45A-4985E81DA8A1",
+          "denominatorExceptionUuid": "B55F6B97-ABF6-4F44-90C5-D02D99DE55DA"
+        }
+      },
+      {
+        "name": "between40And75",
+        "description": "Patients aged 40 to 75 years at the beginning of the measurement period with Type 1 or Type 2 diabetes and with an LDL-C result of 70–189 mg/dL recorded as the highest fasting or direct laboratory test result in the measurement year or during the two years prior to the beginning of the measurement period",
+        "eMeasureUuids": {
+          "initialPopulationUuid": "E44CE0A2-A08E-48CC-B022-5B54F808FB61",
+          "denominatorUuid": "01B3E154-5F42-4905-BDDD-E2A34B8C1DB2",
+          "numeratorUuid": "5E64B1E4-1F1A-4B3B-B148-5044F6B30760",
+          "denominatorExclusionUuid": "1354D37B-998F-434E-8039-99F6CCC987FD",
+          "denominatorExceptionUuid": "3D0BD8CB-CB77-407A-A367-080F53D880DD"
+        }
+      }
+    ]
   },
   {
     "title": "Age Appropriate Screening Colonoscopy",
@@ -44059,7 +44094,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44112,7 +44147,7 @@
     "nqfEMeasureId": null,
     "nqfId": null,
     "measureId": "441",
-    "description": "The IVD All-or-None Measure is one outcome measure (optimal control). The measure contains four goals. All four goals within a measure must be reached in order to meet that measure. The numerator for the all-or-none measure should be collected from the organization's total IVD denominator. All-or-None Outcome Measure (Optimal Control) - Using the IVD denominator optimal results include:\r- Most recent blood pressure (BP) measurement is less than 140/90 mm Hg -- And\r- Most recent tobacco status is Tobacco Free -- And\r- Daily Aspirin or Other Antiplatelet Unless Contraindicated -- And\r- Statin Use Unless Contraindicated",
+    "description": "The IVD All-or-None Measure is one outcome measure (optimal control). The measure contains four goals. All four goals within a measure must be reached in order to meet that measure. The numerator for the all-or-none measure should be collected from the organization's total IVD denominator. All-or-None Outcome Measure (Optimal Control) - Using the IVD denominator optimal results include:\r\n+G254\r\n- Most recent blood pressure (BP) measurement is less than 140/90 mm Hg -- And\r\n- Most recent tobacco status is Tobacco Free -- And\r\n- Daily Aspirin or Other Antiplatelet Unless Contraindicated -- And\r\n- Statin Use Unless Contraindicated",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
     "measureType": "intermediateOutcome",
     "primarySteward": "Wisconsin Collaborative for Healthcare Quality",
@@ -44185,7 +44220,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44371,7 +44406,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44401,7 +44436,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44461,7 +44496,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": false,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44491,7 +44526,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44521,7 +44556,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44551,7 +44586,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44581,7 +44616,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44611,7 +44646,7 @@
     "metricType": "singlePerformanceRate",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44641,7 +44676,7 @@
     "metricType": "costScore",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
-    "isHighPriority": false,
+    "isHighPriority": true,
     "isInverse": true,
     "isIcdImpacted": false,
     "isToppedOutByProgram": false,
@@ -44885,7 +44920,7 @@
     }
   },
   {
-    "title": "Uterine Artery Embolization Technique: Documentation of Angiographic Endpoints and\r\rInterrogation of Ovarian Arteries",
+    "title": "Uterine Artery Embolization Technique: Documentation of Angiographic Endpoints and\r\nInterrogation of Ovarian Arteries",
     "eMeasureId": null,
     "nqfEMeasureId": null,
     "nqfId": null,
@@ -47787,7 +47822,7 @@
     "isToppedOutByProgram": false,
     "isRegistryMeasure": false,
     "measureSpecification": {
-      "cmsWebInterface": "https://www.cms.gov/Medicare/Quality-Payment-Program/Resource-Library/2018-Web-Interface-Measures-and-supporting-documents/Web-Interface-Measures/2018_WI_DM.pdf"
+      "cmsWebInterface": "https://qpp.cms.gov/docs/QPP_quality_measure_specifications/Web-Interface-Measures/2018_WI_DM.pdf"
     }
   },
   {
@@ -49491,7 +49526,7 @@
     ]
   },
   {
-    "measureId": "ACCPin3",
+    "measureId": "ACCPIN3",
     "title": "ACCPin3 Heart Failure: Patient Self Care Education",
     "description": "Patients, age 18 and older, with a principle diagnosis of heart failure (LVEF <40) who received educational counseling on weight monitoring, sodium restriction, physical activity and medication instruction.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50566,7 +50601,7 @@
     ]
   },
   {
-    "measureId": "ACRad1",
+    "measureId": "ACRAD1",
     "title": "CT Colonography True Positive Rate",
     "description": "Percentage of exams with a ≥10mm polyp detected by CTC that was with confirmed by colonoscopy (True Positive Rate)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -50591,7 +50626,7 @@
     ]
   },
   {
-    "measureId": "ACRad15",
+    "measureId": "ACRAD15",
     "title": "Report Turnaround Time: Radiography (modified)",
     "description": "Mean radiography report turnaround time (RTAT). (Does not include mammography.)\nThis measure has been harmonized with MSN QCDR.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50616,7 +50651,7 @@
     ]
   },
   {
-    "measureId": "ACRad16",
+    "measureId": "ACRAD16",
     "title": "Report Turnaround Time: Ultrasound (Excluding Breast US)",
     "description": "Mean Ultrasound report turnaround time (RTAT)\nThis measure has been harmonized with MSN QCDR.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50641,7 +50676,7 @@
     ]
   },
   {
-    "measureId": "ACRad17",
+    "measureId": "ACRAD17",
     "title": "Report Turnaround Time: MRI",
     "description": "Mean MRI report turnaround time (RTAT)\nThis measure has been harmonized with MSN QCDR.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50666,7 +50701,7 @@
     ]
   },
   {
-    "measureId": "ACRad18",
+    "measureId": "ACRAD18",
     "title": "Report Turnaround Time: CT",
     "description": "Mean CT report turnaround time (RTAT)\nThis measure has been harmonized with MSN QCDR.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50691,7 +50726,7 @@
     ]
   },
   {
-    "measureId": "ACRad19",
+    "measureId": "ACRAD19",
     "title": "Report Turnaround Time: PET",
     "description": "Mean PET report turnaround time (RTAT)\nThis measure has been harmonized with MSN QCDR.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50716,7 +50751,7 @@
     ]
   },
   {
-    "measureId": "ACRad21",
+    "measureId": "ACRAD21",
     "title": "Lung Cancer Screening Cancer Detection Rate (CDR)",
     "description": "The percentage of screenings of lung cancer that were interpreted as positive (Lung-RADS category 3 or 4) and result in a tissue diagnosis of cancer within 12 months.",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -50741,7 +50776,7 @@
     ]
   },
   {
-    "measureId": "ACRad22",
+    "measureId": "ACRAD22",
     "title": "Lung Cancer Screening Positive Predictive Value (PPV)",
     "description": "The percentage of screenings for lung cancer with abnormal interpretation (Lung-RADS 3 or 4) that result in a tissue diagnosis of cancer within 12 months.",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -50766,7 +50801,7 @@
     ]
   },
   {
-    "measureId": "ACRad23",
+    "measureId": "ACRAD23",
     "title": "Lung Cancer Screening Abnormal Interpretation Rate",
     "description": "The percentage of screening lung cancer interpreted as positive (Lung-RADS Category 3 or 4).",
     "nationalQualityStrategyDomain": "Efficiency and Cost Reduction",
@@ -50791,7 +50826,7 @@
     ]
   },
   {
-    "measureId": "ACRad25",
+    "measureId": "ACRAD25",
     "title": "Report Turnaround Time: Mammography",
     "description": "Mean mammography report turnaround time (RTAT).\nThis measure has been harmonized with MSN QCDR.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -50816,7 +50851,7 @@
     ]
   },
   {
-    "measureId": "ACRad26",
+    "measureId": "ACRAD26",
     "title": "Appropriate venous access for hemodialysis",
     "description": "Percentage of patients undergoing tunneled (long-term) catheter access for hemodialysis via subclavian access as compared to internal jugular access",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -50841,7 +50876,7 @@
     ]
   },
   {
-    "measureId": "ACRad28",
+    "measureId": "ACRAD28",
     "title": "Rate of early peristomal infection following fluoroscopically guided gastrostomy tube placement",
     "description": "Percentage of patients with peristomal gastrostomy infection no more than14 days following initial tube placement",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -50866,7 +50901,7 @@
     ]
   },
   {
-    "measureId": "ACRad29",
+    "measureId": "ACRAD29",
     "title": "Rate of percutaneous nephrostomy tube replacement within 30 days secondary to dislodgement",
     "description": "Percentage of percutaneous nephrostomy tube replacement within 30 days following initial placement.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -50891,7 +50926,7 @@
     ]
   },
   {
-    "measureId": "ACRad3",
+    "measureId": "ACRAD3",
     "title": "Screening Mammography Cancer Detection Rate (CDR)",
     "description": "The fraction of all screening mammograms that are interpreted as positive (abnormal) and have a tissue diagnosis of cancer within 12 months (expressed per 1000 exams, not as a percentage)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -50916,7 +50951,7 @@
     ]
   },
   {
-    "measureId": "ACRad30",
+    "measureId": "ACRAD30",
     "title": "Rate of Inadequate Percutaneous Image-Guided Biopsy",
     "description": "The percentage of percutaneous image-guided (US, CT, fluoro) biopsy procedures performed in which sampling was inadequate for diagnosis on the final pathology report.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -50941,7 +50976,7 @@
     ]
   },
   {
-    "measureId": "ACRad31",
+    "measureId": "ACRAD31",
     "title": "Percent of CT Abdomen-pelvis exams with contrast (single phase scan) for which Dose Length Product is at or below the size-specific diagnostic reference level.",
     "description": "Percent of CT Abdomen-pelvis exams with contrast (single phase scan) for which Dose Length Product is at or below the size-specific diagnostic reference level. Note: Calculated at facility/TIN level and assigned to all NPIs who read CT under that TIN.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -50966,7 +51001,7 @@
     ]
   },
   {
-    "measureId": "ACRad32",
+    "measureId": "ACRAD32",
     "title": "Percent of CT Chest exams without contrast (single phase scan) for which Dose Length Product is at or below the size-specific diagnostic reference level.",
     "description": "Percent of CT Chest exams without contrast (single phase scan) for which Dose Length Product is at or below the size-specific diagnostic reference level. Note: Calculated at facility/TIN level and assigned to all NPIs who read CT under that TIN.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -50991,7 +51026,7 @@
     ]
   },
   {
-    "measureId": "ACRad33",
+    "measureId": "ACRAD33",
     "title": "Percent of CT Head/Brain exams without contrast (single phase scan) for which Dose Length Product is at or below the size-specific diagnostic reference level",
     "description": "Percent of CT Head/Brain exams without contrast (single phase scan) for which Dose Length Product is at or below the size-specific diagnostic reference level. Note: Calculated at facility/TIN level and assigned to all NPIs who read CT under that TIN.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -51016,7 +51051,7 @@
     ]
   },
   {
-    "measureId": "ACRad5",
+    "measureId": "ACRAD5",
     "title": "Screening Mammography Abnormal Interpretation Rate (Recall Rate)",
     "description": "The percentage of screening mammograms interpreted as positive (abnormal)",
     "nationalQualityStrategyDomain": "Efficiency and Cost Reduction",
@@ -51041,7 +51076,7 @@
     ]
   },
   {
-    "measureId": "ACRad6",
+    "measureId": "ACRAD6",
     "title": "Screening Mammography Positive Predictive Value 2 (PPV2 - Biopsy Recommended)",
     "description": "The percentage of screening mammograms where biopsy was recommended that have a tissue diagnosis of cancer within 12 months. Note: Recommendation for biopsy may be made on the basis of a diagnostic mammogram that was initiated by findings on the screening",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -51066,7 +51101,7 @@
     ]
   },
   {
-    "measureId": "ACRad7",
+    "measureId": "ACRAD7",
     "title": "Screening Mammography Node Negativity Rate",
     "description": "The percentage of invasive cancers detected at screening mammography that are node negative",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -51091,7 +51126,7 @@
     ]
   },
   {
-    "measureId": "ACRad8",
+    "measureId": "ACRAD8",
     "title": "Screening Mammography Minimal Cancer Rate",
     "description": "The percentage of cancers detected at screening mammography that are invasive carcinoma ≤10mm or DCIS",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -51391,7 +51426,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma1",
+    "measureId": "ACSTRAUMA1",
     "title": "Trauma Initial Assessment Composite",
     "description": "Percentage of blunt multisystem trauma patients having the following components documented upon presentation to the emergency department (ED) within 30 minutes of arrival:\n1. Glasgow Coma Scale (GSC) score\n2. Temperature",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -51416,7 +51451,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma2",
+    "measureId": "ACSTRAUMA2",
     "title": "Mortality Rate Following Blunt Traumatic Injury to the Chest and/or Abdomen",
     "description": "In-hospital mortality rate for patients with severe blunt injury to the abdomen and/or chest (Abbreviated Injury Score [AIS] ≥ 3).",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -51441,7 +51476,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma3",
+    "measureId": "ACSTRAUMA3",
     "title": "Mortality Rate Following Penetrating Traumatic Injury to the Chest and/or Abdomen",
     "description": "In-hospital mortality rate for patients with severe penetrating injury to the abdomen and/or chest (Abbreviated Injury Score [AIS] ≥ 3).",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -51466,7 +51501,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma4",
+    "measureId": "ACSTRAUMA4",
     "title": "Splenic Salvage Rate",
     "description": "Percentage of patients with a spleen injury (spleen AIS ≥ 2 and < 5) that do not undergo a splenectomy.",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -51491,7 +51526,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma5",
+    "measureId": "ACSTRAUMA5",
     "title": "Optimal Timing of Surgical or Procedural Intervention for Hemorrhage in Trauma",
     "description": "Percentage of patients presenting with traumatic hemorrhagic shock who undergo an operative or procedural intervention for hemorrhage control within 4 hours.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -51516,7 +51551,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma6",
+    "measureId": "ACSTRAUMA6",
     "title": "Optimal Ratio of Blood Product Transfusion",
     "description": "Percentage of patients presenting with traumatic hemorrhagic shock who receive plasma and packed red blood cells (pRBC’s) in a ratio higher or equal to 1 unit of plasma for every 2 units of pRBCs over the first four hours after arrival to the emergency department.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -51541,7 +51576,7 @@
     ]
   },
   {
-    "measureId": "ACSTrauma7",
+    "measureId": "ACSTRAUMA7",
     "title": "Timely Initiation of VTE Prophylaxis in Trauma Patients",
     "description": "Percentage of seriously injured patients with pharmacologic venous thromboembolism (VTE) prophylaxis initiated within 48 hours of admission.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -56551,7 +56586,7 @@
     ]
   },
   {
-    "measureId": "HAdv1",
+    "measureId": "HADV1",
     "title": "HAdv1 - Use of high risk sleep medications in the elderly",
     "description": "Percentage of patients aged 65 years and older for whom a high-risk sleep aid medication was prescribed for more than 30 days during the performance period.\n\nThis measure is reported once per reporting period for each patient having one or more denominator qualifying visits.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -56576,7 +56611,7 @@
     ]
   },
   {
-    "measureId": "HAdv2",
+    "measureId": "HADV2",
     "title": "HAdv2 - Atrial Fibrillation Prevention and Treatment – Lifestyle and Disease Factor Assessment",
     "description": "Percentage of patients diagnosed with atrial fibrillation (afib) who are assessed for lifestyle and disease factors that contribute to uncontrolled atrial fibrillation at least once in the past 12 months.\n\nThis measure is reported once per reporting period for each patient having one or more denominator qualifying visits.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -62667,7 +62702,7 @@
     ]
   },
   {
-    "measureId": "Pinc1",
+    "measureId": "PINC1",
     "title": "Risk-adjusted 30 day Readmission for Acute Myocardial Infarction",
     "description": "Readmission to the same hospital for all causes within 30 days from the date of discharge of the index Acute Myocardial Infarction (AMI) admission",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -62692,7 +62727,7 @@
     ]
   },
   {
-    "measureId": "Pinc2",
+    "measureId": "PINC2",
     "title": "Risk-adjusted 30 day Readmission for Heart Failure",
     "description": "Readmission to the same hospital for all causes within 30 days from the date of discharge of the index Heart Failure (HF) admission",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -62717,7 +62752,7 @@
     ]
   },
   {
-    "measureId": "Pinc3",
+    "measureId": "PINC3",
     "title": "Risk-adjusted 30 day Readmission for Pneumonia",
     "description": "Readmission to the same hospital for all causes within 30 days from the date of discharge of the index Pneumonia (PN) admission",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -62742,7 +62777,7 @@
     ]
   },
   {
-    "measureId": "Pinc33",
+    "measureId": "PINC33",
     "title": "Risk-Adjusted Average Length of Inpatient Hospital Stay for Acute Myocardial Infarction",
     "description": "The average (geometric mean) hospital length of stay in days relative to the expected geometric mean length of stay of the Acute Myocardial Infarction (AMI) population of inpatients for the measurement year.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -62767,7 +62802,7 @@
     ]
   },
   {
-    "measureId": "Pinc34",
+    "measureId": "PINC34",
     "title": "Risk-Adjusted Average Length of Inpatient Hospital Stay for Heart Failure",
     "description": "The average (geometric mean) hospital length of stay in days relative to the expected geometric mean length of stay of the Heart Failure (HF) population of inpatients for the measurement year.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -62792,7 +62827,7 @@
     ]
   },
   {
-    "measureId": "Pinc35",
+    "measureId": "PINC35",
     "title": "Risk-Adjusted Average Length of Inpatient Hospital Stay for Pneumonia",
     "description": "The average (geometric mean) hospital length of stay in days relative to the expected geometric mean length of stay of the Pneumonia (PN) population of inpatients for the measurement year.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -62817,7 +62852,7 @@
     ]
   },
   {
-    "measureId": "Pinc4",
+    "measureId": "PINC4",
     "title": "Risk-adjusted 30 day Inpatient Mortality for Acute Myocardial Infarction",
     "description": "Mortality during hospital admission for patients with a Principal Diagnosis of Acute Myocardial Infarction (AMI).",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -62842,7 +62877,7 @@
     ]
   },
   {
-    "measureId": "Pinc5",
+    "measureId": "PINC5",
     "title": "Risk-adjusted 30 day Inpatient Mortality for Heart Failure",
     "description": "Mortality during hospital admission for patients with a Principal Diagnosis of Heart Failure (HF)",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -62867,7 +62902,7 @@
     ]
   },
   {
-    "measureId": "Pinc6",
+    "measureId": "PINC6",
     "title": "Risk-adjusted 30 day Inpatient Mortality for Pneumonia",
     "description": "Mortality during hospital admission for patients with a Principal Diagnosis of Pneumonia (PN)",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -63487,7 +63522,7 @@
     ]
   },
   {
-    "measureId": "Quantum31",
+    "measureId": "QUANTUM31",
     "title": "Central Line Ultrasound Guidance",
     "description": "Percentage of patients, regardless of age, in whom ultrasound guidance is used by the anesthesia clinician when placing a central line for those central lines that are placed in the internal jugular location.",
     "nationalQualityStrategyDomain": "Patient Safety",
@@ -63512,7 +63547,7 @@
     ]
   },
   {
-    "measureId": "Quantum41",
+    "measureId": "QUANTUM41",
     "title": "Case Cancellation on Day of Surgery",
     "description": "Surgical case cancellation occurring after care has been initiated by the anesthesia care team on the day of surgery. The cause of cancellation must relate to an issue related to the care of the anesthesiology clinician. Because the measure applies to the anesthesia care team, this measure can only be reported by groups who are reporting MIPS under the Group Reporting Option.",
     "nationalQualityStrategyDomain": "Communication and Care Coordination",
@@ -64762,7 +64797,7 @@
     ]
   },
   {
-    "measureId": "SpineTRACK1",
+    "measureId": "SPINETRACK1",
     "title": "Percent of patients meeting MCID thresholds for back or neck pain",
     "description": "Calculation of the percent of patients who meet the minimum clinically important difference (MCID) threshold for improvement in back or neck pain following a spine surgical intervention (cervical or lumbar)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -64787,7 +64822,7 @@
     ]
   },
   {
-    "measureId": "SpineTRACK2",
+    "measureId": "SPINETRACK2",
     "title": "Percent of patients meeting MCID thresholds for leg or arm pain",
     "description": "Calculation of the percent of patients who meet the minimum clinically important difference (MCID) threshold for improvement in leg or arm pain following a spine surgical intervention (cervical or lumbar)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -64812,7 +64847,7 @@
     ]
   },
   {
-    "measureId": "SpineTRACK3",
+    "measureId": "SPINETRACK3",
     "title": "Percent of patients meeting MCID thresholds for pain-related disability (ODI/NDI)",
     "description": "Calculation of the percent of patients who meet the minimum clinically important difference (MCID) threshold for improvement in pain-related disability following a spine surgical intervention (cervical or lumbar)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -64837,7 +64872,7 @@
     ]
   },
   {
-    "measureId": "SpineTRACK4",
+    "measureId": "SPINETRACK4",
     "title": "Percent of patients meeting SCB thresholds for back or neck pain",
     "description": "Calculation of the percent of patients who meet the substantial clinical benefit (SCB) thresholds for improvement in back or neck pain following a spine surgical intervention (cervical or lumbar)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -64862,7 +64897,7 @@
     ]
   },
   {
-    "measureId": "SpineTRACK5",
+    "measureId": "SPINETRACK5",
     "title": "Percent of patients meeting SCB thresholds for leg or arm pain",
     "description": "Calculation of the percent of patients who meet the substantial clinical benefit (SCB) thresholds for improvement in leg or arm pain following a spine surgical intervention (cervical or lumbar)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",
@@ -64887,7 +64922,7 @@
     ]
   },
   {
-    "measureId": "SpineTRACK6",
+    "measureId": "SPINETRACK6",
     "title": "Percent of patients meeting SCB thresholds for pain-related disability (ODI/NDI)",
     "description": "Calculation of the percent of patients who meet the substantial clinical benefit (SCB) thresholds for improvement in pain-related disability following a spine surgical intervention (cervical or lumbar)",
     "nationalQualityStrategyDomain": "Effective Clinical Care",

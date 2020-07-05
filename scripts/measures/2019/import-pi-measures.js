@@ -24,7 +24,8 @@ const PI_CSV_COLUMN_NAMES = {
   'reportingCategory': 'reportingCategory',
   'substitutes': 'substitutes',
   'measureSpecification': 'measureSpecification',
-  'measureSets': 'measureSets'
+  'measureSets': 'measureSets',
+  'exclusion': 'exclusion'
 };
 
 // Accounts for TRUE, True, true, X, x...
@@ -72,6 +73,8 @@ function convertPiCsvsToMeasures(piCSVRows) {
         measure[measureKeyName] = mapInput(row[columnName]) === null ? [] : [].push(row[columnName]);
       } else if (measureKeyName === 'substitutes') {
         measure[measureKeyName] = mapInput(row[columnName]) === null ? [] : [].push(row[columnName]);
+      } else if (measureKeyName === 'objective') { // Values need to be camelcased, but come in as seperate words
+        measure[measureKeyName] = _.camelCase(row[columnName]);
       } else {
         measure[measureKeyName] = mapInput(row[columnName]);
       }

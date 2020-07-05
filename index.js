@@ -28,9 +28,8 @@ exports.getBenchmarksData = function() {
 /**
  * @return {{}} - Object representation of the Benchmarks Schema
  */
-exports.getBenchmarksSchema = function() {
-  const performanceYear = (process.argv[3] || Constants.currentPerformanceYear).toString();
-  return YAML.load(path.join(__dirname, 'benchmarks', performanceYear, 'benchmarks-schema.yaml'));
+exports.getBenchmarksSchema = function(performanceYear = Constants.currentPerformanceYear) {
+  return YAML.load(path.join(__dirname, 'benchmarks', performanceYear.toString(), 'benchmarks-schema.yaml'));
 };
 
 /**
@@ -52,8 +51,14 @@ exports.getMeasuresSchema = function(performanceYear = 2017) {
  * @return {Array<ClinicalCluster>}
  */
 exports.getClinicalClusterData = function(performanceYear = 2017) {
-  return JSON.parse(
-    fs.readFileSync(path.join(__dirname, 'clinical-clusters', performanceYear.toString(), 'clinical-clusters.json')));
+  let clusterData = [];
+  try {
+    clusterData = JSON.parse(
+      fs.readFileSync(path.join(__dirname, 'clinical-clusters', performanceYear.toString(), 'clinical-clusters.json')));
+  } catch (e) {
+    console.log('QPP measures data not found for year: ' + performanceYear + ' --> ' + e);
+  }
+  return clusterData;
 };
 
 /**

@@ -53,14 +53,14 @@ const MAIN_FIELDS = {
   isInverse: false,
   overallAlgorithm: undefined,
   isIcdImpacted: false,
-  isToppedOutByProgram: false
+  isClinicalGuidelineChanged: false
 };
 
 // Source CSV column names below are mapped to their measures data names
 const SUBMISSION_METHODS = {
   methodsClaims: 'claims',
   methodsCertifiedSurveyVendor: 'certifiedSurveyVendor',
-  electronicHealthRecordMethod: 'electronicHealthRecord',
+  methodsElectronicHealthRecord: 'electronicHealthRecord',
   methodsCmsWebInterface: 'cmsWebInterface',
   methodsAdministrativeClaims: 'administrativeClaims',
   methodsRegistry: 'registry'
@@ -71,7 +71,8 @@ const MEASURE_SPECIFICATIONS = [
   `default`,
   `claims`,
   `registry`,
-  `cmsWebInterface`
+  `cmsWebInterface`,
+  `electronicHealthRecord`
 ];
 
 const MEASURE_SETS = [
@@ -113,8 +114,7 @@ const MEASURE_SETS = [
   'geriatrics',
   'urgentCare',
   'skilledNursingFacility',
-  'dentistry',
-  'blank'
+  'dentistry'
 ];
 
 // Mapping values within the measureType column to valid enums
@@ -126,10 +126,7 @@ const MEASURE_TYPES = {
   'efficiency': 'efficiency',
   'intermediate outcome': 'intermediateOutcome',
   'structure': 'structure',
-  'patient reported outcome': 'outcome',
-  'composite': 'outcome',
-  'cost/resource use': 'efficiency',
-  'clinical process effectiveness': 'process'
+  'patient reported outcome': 'patientReportedOutcome'
 };
 
 // markers are what the CSV creators chose as field values;
@@ -199,7 +196,7 @@ function mapInput(rawInput, fieldName) {
 
     // Excel strips leading zeroes from the measureIds/nqfIds and we restore them here
     if (fieldName === 'measureId') {
-      return _.padStart(input, 3, '0');
+      return _.padStart(input, 3, '0').toUpperCase();
     } else if (fieldName === 'nqfId') {
       return _.padStart(input, 4, '0');
     }
@@ -291,7 +288,6 @@ function convertQualityStrataCsvsToMeasures(qualityCsvRows, strataCsvRows) {
     measure['submissionMethods'] = submissionMethods;
     measure['measureSets'] = measureSets;
     measure['measureSpecification'] = measureSpecification;
-
     return measure;
   });
 

@@ -3,7 +3,7 @@
     "category": "pi",
     "measureId": "PI_PPHI_1",
     "title": "Security Risk Analysis",
-    "description": "Conduct or review a security risk analysis in accordance with the requirements in 45 CFR 164.308(a)(1), including addressing the security (to include encryption) of ePHI data created or maintained by CEHRT in accordance with requirements in 45 CFR 164.312(a)(2)(iv) and 164.306(d)(3), implement security updates as necessary, and correct identified security deficiencies as part of the MIPS eligible clinician's risk management process.",
+    "description": "Conduct or review a security risk analysis in accordance with the requirements in 45 CFR 164.308(a)(1), including addressing the security (to include encryption) of ePHI data created or maintained by certified electronic health record technology (CEHRT) in accordance with requirements in 45 CFR 164.312(a)(2)(iv) and 164.306(d)(3), implement security updates as necessary, and correct identified security deficiencies as part of the MIPS eligible clinician's risk management process.",
     "isRequired": true,
     "metricType": "boolean",
     "firstPerformanceYear": 2017,
@@ -13,8 +13,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresSecurityRiskAnalysis.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -26,12 +27,13 @@
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
     "weight": 0,
-    "objective": null,
+    "objective": "attestation",
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -43,29 +45,31 @@
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
     "weight": 0,
-    "objective": null,
+    "objective": "attestation",
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
     "measureId": "PI_ONCACB_1",
     "title": "ONC-ACB Surveillance Attestation",
-    "description": "I have (1) Acknowledged the option to cooperate in good faith with ONC�ACB surveillance of his or her health information technology certified under the ONC Health IT Certification Program if a request to assist in ONC�ACB surveillance is received; and (2) If requested, cooperated in good faith with ONC�ACB surveillance of his or her health information technology certified under the ONC Health IT Certification Program as authorized by 45 CFR part 170, subpart E, to the extent that such technology meets (or can be used to meet) the definition of CEHRT, including by permitting timely access to such technology and demonstrating its capabilities as implemented and used by the MIPS eligible clinician in the field.",
+    "description": "I have (1) Acknowledged the option to cooperate in good faith with ONC-ACB surveillance of his or her health information technology certified under the ONC Health IT Certification Program if a request to assist in ONC-ACB surveillance is received; and (2) If requested, cooperated in good faith with ONC-ACB surveillance of his or her health information technology certified under the ONC Health IT Certification Program as authorized by 45 CFR part 170, subpart E, to the extent that such technology meets (or can be used to meet) the definition of CEHRT, including by permitting timely access to such technology and demonstrating its capabilities as implemented and used by the MIPS eligible clinician in the field.",
     "isRequired": false,
     "metricType": "boolean",
     "firstPerformanceYear": 2017,
     "lastPerformanceYear": null,
     "weight": 0,
-    "objective": null,
+    "objective": "attestation",
     "isBonus": false,
     "reportingCategory": null,
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -81,13 +85,14 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresEPrescribing.pdf",
+    "measureSets": [],
+    "exclusion": "PI_LVPP_1"
   },
   {
     "category": "pi",
     "measureId": "PI_LVPP_1",
-    "title": "e-Prescribing exclusion",
+    "title": "e-Prescribing Exclusion",
     "description": "Any MIPS eligible clinician who writes fewer than 100 permissible prescriptions during the performance period.",
     "isRequired": false,
     "metricType": "boolean",
@@ -99,7 +104,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -107,16 +113,17 @@
     "title": "Query of the Prescription Drug Monitoring Program (PDMP)",
     "description": "For at least one Schedule II opioid electronically prescribed using CEHRT during the performance period, the MIPS eligible clinician uses data from CEHRT to conduct a query of a Prescription Drug Monitoring Program (PDMP) for prescription drug history, except where prohibited and in accordance with applicable law.",
     "isRequired": false,
-    "metricType": "proportion",
+    "metricType": "boolean",
     "firstPerformanceYear": 2019,
     "lastPerformanceYear": null,
     "weight": 5,
     "objective": "electronicPrescribing",
     "isBonus": true,
-    "reportingCategory": "exclusion",
+    "reportingCategory": "bonus",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresQueryofPrescriptionDrugMonitoringProgram(PDMP).pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -132,14 +139,15 @@
     "isBonus": true,
     "reportingCategory": "bonus",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresVerifyOpioidTreatmentAgreement.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
     "measureId": "PI_HIE_1",
     "title": "Support Electronic Referral Loops By Sending Health Information",
-    "description": "For at least one transition of care or referral  to a provider of care other than a MIPS eligible clinician, the MIPS eligible clinician creates a summary of care record using CEHRT; and electronically exchanges the summary of care record.",
+    "description": "For at least one transition of care or referral, the MIPS eligible clinician that transitions or refers their patient to another setting of care or health care provider - (1) creates a summary of care record using certified electronic health record technology (CEHRT); and (2) electronically exchanges the summary of care record.",
     "isRequired": true,
     "metricType": "proportion",
     "firstPerformanceYear": 2017,
@@ -149,8 +157,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresSupportElectronicReferralLoopsbySendingHealthInfo.pdf",
+    "measureSets": [],
+    "exclusion": "PI_LVOTC_1"
   },
   {
     "category": "pi",
@@ -167,7 +176,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -183,14 +193,15 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresSupportElectronicReferralLoopsReceivingandIncorpo.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
     "measureId": "PI_LVITC_2",
     "title": "Support Electronic Referral Loops By Receiving and Incorporating Health Information Exclusion",
-    "description": "Any MIPS eligible clinician who receives fewer than 100 transitions of care or referrals or has fewer than 100 encounters with patients never before encountered during the performance period.",
+    "description": "Any MIPS eligible clinician who receives transitions of care or referrals or has patient encounters in which the MIPS eligible clinician has never before encountered the patient fewer than 100 times during the performance period.",
     "isRequired": false,
     "metricType": "boolean",
     "firstPerformanceYear": 2019,
@@ -201,7 +212,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -218,7 +230,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -234,8 +247,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresProvidePatientsElectronicAccesstoTheirHealthInfor.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -251,8 +265,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresSyndromicSurveillanceReporting.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -269,7 +284,8 @@
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -286,7 +302,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -303,7 +320,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -320,7 +338,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -336,8 +355,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresImmunizationRegistryReporting.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -354,7 +374,8 @@
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -371,7 +392,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -388,7 +410,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -405,7 +428,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -421,8 +445,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresElectronicCaseReporting.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -439,7 +464,8 @@
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -456,7 +482,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -473,7 +500,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -490,7 +518,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -506,8 +535,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresPublicHealthRegistryReporting.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -524,7 +554,8 @@
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -541,7 +572,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -558,7 +590,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -575,7 +608,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -591,8 +625,9 @@
     "isBonus": false,
     "reportingCategory": "required",
     "substitutes": [],
-    "measureSpecification": null,
-    "measureSets": []
+    "measureSpecification": "https://qpp.cms.gov/docs/pi_specifications/Measure%20Specifications/2019MIPSPIMeasuresClinicalDataRegistryReporting.pdf",
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -609,7 +644,8 @@
     "reportingCategory": "required",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -626,7 +662,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -643,7 +680,8 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   },
   {
     "category": "pi",
@@ -660,6 +698,7 @@
     "reportingCategory": "exclusion",
     "substitutes": [],
     "measureSpecification": null,
-    "measureSets": []
+    "measureSets": [],
+    "exclusion": null
   }
 ]

@@ -22,7 +22,7 @@ const _ = require('lodash');
 const parse = require('csv-parse/lib/sync');
 
 const MAX_SPECIALITY_SET_SIZE = 6;
-const SUPPORTED_PERFORMANCE_YEARS = [2017];
+const SUPPORTED_PERFORMANCE_YEARS = [2017, 2018, 2019];
 
 let measuresJson = '';
 const performanceYear = parseInt(process.argv[2], 10);
@@ -44,6 +44,10 @@ const specialSpecialtySetRelations = {
     registry: [
       { name: 'dentistry', action: 'remove', measureIds: ['378', '379'] }
     ]
+  },
+  2019: {
+    claims: [],
+    registry: []
   }
 };
 
@@ -87,6 +91,8 @@ const specialClusterRelations = {
     claims: [
       {measureId: '130', optionals: []},
       {measureId: '317', optionals: []},
+      {measureId: '117', optionals: []},
+      {measureId: '226', optionals: []},
       {measureId: '112', optionals: ['113']},
       {measureId: '113', optionals: ['112']}
     ],
@@ -96,6 +102,8 @@ const specialClusterRelations = {
       {measureId: '226', optionals: []},
       {measureId: '424', optionals: []},
       {measureId: '430', optionals: []},
+      {measureId: '317', optionals: []},
+      {measureId: '134', optionals: []},
       {measureId: '051', optionals: ['052']},
       {measureId: '052', optionals: ['051']},
       {measureId: '398', optionals: ['444']},
@@ -107,10 +115,21 @@ const specialClusterRelations = {
       {measureId: '118', optionals: ['007', '006']},
       {measureId: '005', optionals: ['008']},
       {measureId: '008', optionals: ['005']},
-      {measureId: '426', optionals: ['427']},
-      {measureId: '427', optionals: ['426']},
       {measureId: '112', optionals: ['113']},
       {measureId: '113', optionals: ['112']}
+    ]
+  },
+  2019: {
+    claims: [
+      {measureId: '117', optionals: []},
+      {measureId: '130', optionals: []},
+      {measureId: '226', optionals: []},
+      {measureId: '317', optionals: []}
+    ],
+    registry: [
+      {measureId: '110', optionals: []},
+      {measureId: '130', optionals: []},
+      {measureId: '226', optionals: []}
     ]
   }
 };

@@ -1,14 +1,19 @@
 // Libraries
 const parse = require('csv-parse');
+const _ = require('lodash');
 // Constants
-// Note: A blank column is added due to the formatting of CSVs we receive.
-// We need to standardize the format of the CSVs.
+// Note: Older benchmarks CSVs provided to us (and perhaps future ones)
+// end with an extraneous blank column. To accommodate that, just add an
+// empty string value at the end of BENCHMARK_CSV_COLUMNS (but eyeball the
+// CSV manually first to verify it's actually blank and not a new column!)
 const BENCHMARK_CSV_COLUMNS = [
   'measureName',
   'qualityId',
   'submissionMethod',
   'measureType',
   'benchmark',
+  'standardDeviation',
+  'average',
   'decile3',
   'decile4',
   'decile5',
@@ -18,7 +23,7 @@ const BENCHMARK_CSV_COLUMNS = [
   'decile9',
   'decile10',
   'isToppedOut',
-  ''
+  'isToppedOutByProgram'
 ];
 // Utils
 const { formatBenchmarkRecord } = require('./format-benchmark-record');
@@ -36,6 +41,11 @@ const benchmarks = [];
 const benchmarkYear = process.argv[2];
 const performanceYear = process.argv[3];
 
+// New 2020 data update
+if (performanceYear >= 2020) {
+  BENCHMARK_CSV_COLUMNS.push('isHighPriority');
+}
+
 if (benchmarkYear && performanceYear) {
   process.stdin.setEncoding('utf8');
 
@@ -47,7 +57,8 @@ if (benchmarkYear && performanceYear) {
   });
 
   process.stdin.on('end', function() {
-    parse(benchmarksData, {columns: BENCHMARK_CSV_COLUMNS, from: 4}, function(err, records) {
+    // Quote option update to handle 2020 data
+    parse(benchmarksData, {columns: BENCHMARK_CSV_COLUMNS, from: 3, quote: '"'}, function(err, records) {
       if (err) {
         console.log(err);
       } else {
@@ -57,7 +68,8 @@ if (benchmarkYear && performanceYear) {
           if (benchmark) benchmarks.push(benchmark);
         });
 
-        process.stdout.write(JSON.stringify(benchmarks, null, 2));
+        const orderedBenchmarks = _.sortBy(benchmarks, ['measureId', 'submissionMethod']);
+        process.stdout.write(JSON.stringify(orderedBenchmarks, null, 2));
       }
     });
   });
